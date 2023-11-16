@@ -1,0 +1,5 @@
+
+Sistema de aluguel de carros de pessoas pra pessoas
+
+Tabelas => 
+Usuario (idusuario, nome, email, senha, rg, cpf, data_nasc, data_cadastro) ---- cadastrar_carro (idcarro, modelo, placa, ano, valor_dia, idusuario, seguro) ---- ofertas_reserva (idcarro, modelo, ano, placa, idusuario, seguro, preco) ---- reserva (andamento, idusuario_locador, idusuario_locatario, data_inicio, data_fim, valortotal)

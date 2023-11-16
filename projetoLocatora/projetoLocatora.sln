@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locatora.App", "Locatora.App", "{82097FFF-6FA0-419D-8EC8-4C9D8EAE3CF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locatora.DDD", "Locatora.DDD", "{5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locatora.Testes", "Locatora.Testes", "{FE6C2D82-A7AB-450B-AC3F-A8B255108412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Domain", "Locatora.Domain\Locatora.Domain.csproj", "{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Repository", "Locatora.Repository\Locatora.Repository.csproj", "{1D6A46D9-03B6-485E-858D-DE977D44F448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Service", "Locatora.Service\Locatora.Service.csproj", "{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6A46D9-03B6-485E-858D-DE977D44F448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6A46D9-03B6-485E-858D-DE977D44F448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6A46D9-03B6-485E-858D-DE977D44F448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6A46D9-03B6-485E-858D-DE977D44F448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
+		{1D6A46D9-03B6-485E-858D-DE977D44F448} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EF495E8-D680-4186-AD1D-C1C9A7573DF2}
+	EndGlobalSection
+EndGlobal
