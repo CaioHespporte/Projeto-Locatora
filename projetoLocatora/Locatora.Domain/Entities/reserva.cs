@@ -1,19 +1,30 @@
 ﻿using Locatora.Domain.Base;
+using Locatora.Domain.Entities;
 
-namespace IFSPStore.Domain.Entities
+namespace Locatora.Domain.Entities
 {
-    public class reserva : BaseEntity<int>
+    public class Reserva : BaseEntity<int>
     {
-        public reserva()
+        public Reserva()
         {
             
         }
 
-        public reserva(int id, string? nome) : base(id)
+        public Reserva(int id, string? andamento, float? valor_total, DateTime? data_inicio, DateTime? data_fim, Usuario? usuario, Cadastrar_carro? cadastrar_carro) : base(id)
         {
-            Nome = nome;
+            Andamento = andamento;
+            Valor_total = valor_total;
+            Data_Inicio = data_inicio;
+            Data_Fim = data_fim;
+            Usuario = usuario;
+            Cadastrar_carro = cadastrar_carro;
         }
 
-        public string? Nome { get; set; } 
+        public string? Andamento { get; set; } 
+        public float? Valor_total { get; set; }
+        public DateTime? Data_Inicio { get; set; }
+        public DateTime? Data_Fim { get; set; }
+        public Usuario? Usuario { get; set; }
+        public Cadastrar_carro? Cadastrar_carro { get; set; }
     }
 }

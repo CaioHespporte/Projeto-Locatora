@@ -9,11 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locatora.DDD", "Locatora.DD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locatora.Testes", "Locatora.Testes", "{FE6C2D82-A7AB-450B-AC3F-A8B255108412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Domain", "Locatora.Domain\Locatora.Domain.csproj", "{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Domain", "Locatora.Domain\Locatora.Domain.csproj", "{EAD763BC-B4B7-4885-9FB0-9137AF18DD05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Repository", "Locatora.Repository\Locatora.Repository.csproj", "{1D6A46D9-03B6-485E-858D-DE977D44F448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Repository", "Locatora.Repository\Locatora.Repository.csproj", "{1D6A46D9-03B6-485E-858D-DE977D44F448}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05} = {EAD763BC-B4B7-4885-9FB0-9137AF18DD05}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.Service", "Locatora.Service\Locatora.Service.csproj", "{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Service", "Locatora.Service\Locatora.Service.csproj", "{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

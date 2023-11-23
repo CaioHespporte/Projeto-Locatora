@@ -1,25 +1,48 @@
 ﻿using Locatora.Domain.Base;
+using Locatora.Domain.Entities;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace IFSPStore.Domain.Entities
+namespace Locatora.Domain.Entities
 {
-    public class ofertas_reserva : BaseEntity<int>
+    public class Oferta : BaseEntity<int>
     {
-        public ofertas_reserva()
+    public Oferta()
+    {
+        Ofertas = new List<Ofertas_reserva>();
+    }
+
+    public Oferta(int id, DateTime data, float valorTotal, Usuario? usuario, List<Ofertas_reserva> ofertas) : base(id)
+    {
+
+        Data = data;
+        ValorTotal = valorTotal;
+        Usuario = usuario;
+        Ofertas = ofertas;
+    }
+
+    public DateTime Data { get; set; }
+    public float ValorTotal { get; set; }
+    public Usuario? Usuario { get; set; }
+    public List<Ofertas_reserva> Ofertas { get; set; }
+}
+    public class Ofertas_reserva : BaseEntity<int>
+    {
+        public Ofertas_reserva()
         {
             
         }
 
-        public ofertas_reserva(int id, string? nome, string? endereco, string? bairro, cadastrar_carro? cidade) : base(id)
+        public Ofertas_reserva(int id, float? preco, Usuario? usuario, Cadastrar_carro? cadastrar_carro, Oferta? oferta) : base(id)
         {
-            Nome = nome;
-            Endereco = endereco;
-            Bairro = bairro;
-            Cidade = cidade;
+            Preco = preco;
+            Usuario = usuario;
+            Cadastrar_carro = cadastrar_carro;
+            Oferta = oferta;
         }
 
-        public string? Nome { get; set; }
-        public string? Endereco { get; set; }
-        public string? Bairro { get; set; }
-        public cadastrar_carro? Cidade { get; set; }
+        public float? Preco { get; set; }
+        public Usuario? Usuario { get; set; }
+        public Cadastrar_carro? Cadastrar_carro { get; set; }
+        public Oferta? Oferta { get; set; } 
     }
 }
