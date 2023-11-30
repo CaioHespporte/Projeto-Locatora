@@ -1,31 +1,28 @@
-﻿using IFSPStore.Domain.Entities;
+﻿using Locatora.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace IFSPStore.Repository.Mapping
 {
-    public class ReservaMap : IEntityTypeConfiguration<Produto>
+    public class ReservaMap : IEntityTypeConfiguration<Reserva>
     {
-        public void Configure(EntityTypeBuilder<Produto> builder)
+        public void Configure(EntityTypeBuilder<Reserva> builder)
         {
-            builder.ToTable("Produto");
+            builder.ToTable("Reserva");
 
             builder.HasKey(prop => prop.Id);
 
-            builder.Property(prop => prop.Nome)
-                .IsRequired()
-                .HasColumnType("varchar(100)");
+            builder.Property(prop => prop.Data_Inicio)
+                .IsRequired();
 
-            builder.Property(prop => prop.Preco);
+            builder.Property(prop => prop.Data_Fim)
+                .IsRequired();
 
-            builder.Property(prop => prop.Quantidade);
+            builder.Property(prop => prop.Valor_total)
+                .IsRequired();
 
-            builder.Property(prop => prop.DataCompra);
-
-            builder.Property(prop => prop.UnidadeVenda)
-                .HasColumnType("varchar(10)");
-
-            builder.HasOne(prop => prop.Grupo);
+            builder.HasOne(prop => prop.Usuario);
+            builder.HasOne(prop => prop.Cadastrar_carro);
         }
     }
 }

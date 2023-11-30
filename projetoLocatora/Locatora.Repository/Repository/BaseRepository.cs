@@ -1,5 +1,5 @@
-﻿using IFSPStore.Domain.Base;
-using IFSPStore.Repository.Context;
+﻿using Locatora.Domain.Base;
+using Locatora.Repository.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace IFSPStore.Repository.Repository

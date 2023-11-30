@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gK5XPKUhJi6Mrp+6BLaMadzpBbr0/ENzYKf2efIVMQlca6oec2ND1zNkz/THKcF3eP20E0PXbzHb9TH8mmYK0g==",
+  "dgSpecHash": "yhvEAlvoNdpDUhrgrc2uwy21a4yRsmDlMm0lANv24sz2Uvem0UXWQdVJejuQd0J1rKoDzzVJUYJ5TMlbyDJKcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caioh\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\caioh\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\caioh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
