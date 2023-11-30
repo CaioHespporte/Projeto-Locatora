@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Repository", "Loca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Service", "Locatora.Service\Locatora.Service.csproj", "{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.App", "Locatora.App\Locatora.App.csproj", "{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
 		{1D6A46D9-03B6-485E-858D-DE977D44F448} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
 		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92} = {5CF90E5F-C7E5-4DAC-A3C7-636F6987EBD9}
+		{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1} = {82097FFF-6FA0-419D-8EC8-4C9D8EAE3CF6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EF495E8-D680-4186-AD1D-C1C9A7573DF2}
