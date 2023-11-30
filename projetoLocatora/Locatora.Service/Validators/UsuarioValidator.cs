@@ -19,6 +19,18 @@ namespace IFSPStore.Service.Validators
             RuleFor(c => c.Senha)
                 .NotEmpty().WithMessage("Por favor informe a senha.")
                 .NotNull().WithMessage("Por favor informe a senha.");
+
+            RuleFor(c => c.Rg)
+                .NotEmpty().WithMessage("Por favor informe o RG.")
+                .NotNull().WithMessage("Por favor informe o RG.");
+
+            RuleFor(c => c.CPF)
+                .NotEmpty().WithMessage("Por favor informe a CPF.")
+                .NotNull().WithMessage("Por favor informe a CPF.");
+
+            RuleFor(c => c.DataNascimento)
+                .NotEmpty().WithMessage("Por favor informe a data de nascimento.")
+                .NotNull().WithMessage("Por favor informe a data de nascimento.");
         }
     }
 }
