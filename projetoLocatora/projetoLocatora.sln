@@ -18,7 +18,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Repository", "Loca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.Service", "Locatora.Service\Locatora.Service.csproj", "{BD85C3E5-8CA9-4419-A941-FCB0061A0C92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locatora.App", "Locatora.App\Locatora.App.csproj", "{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locatora.App", "Locatora.App\Locatora.App.csproj", "{48347FD7-B1B5-4548-8B5B-E6617A1FDCE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D6A46D9-03B6-485E-858D-DE977D44F448} = {1D6A46D9-03B6-485E-858D-DE977D44F448}
+		{BD85C3E5-8CA9-4419-A941-FCB0061A0C92} = {BD85C3E5-8CA9-4419-A941-FCB0061A0C92}
+		{EAD763BC-B4B7-4885-9FB0-9137AF18DD05} = {EAD763BC-B4B7-4885-9FB0-9137AF18DD05}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

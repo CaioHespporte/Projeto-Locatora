@@ -1,0 +1,9 @@
+telas:
+
+Tela principal -> Login ou CADASTRO DE USUARIO
+Tela de "Cadastro de usuário" -> Cadastra o usuário (Nome, email, senha, RG, CPF, Telefone, DataNascimento, DataCadastro)
+Tela de "Login" -> Exibe o nome do usuário ("Olá, <user>.") e os botões "Cadastrar Carro", "Procurar Carro", "Exibir Reservas", "Sair".
+Tela de "Cadastrar Carro" -> Cadastra um carro para ser listado no "Procurar Carro". O carro cadastrado deverá conter as informações cadastradas pelo usuário: Modelo, Placa, Ano, Valor_dia, Seguro, Cidade, Estado. O sistema informa o nome do usuário e gera o ID da oferta criada. 
+Tela de "Procurar Carro" -> Lista as ofertas de carros disponíveis e o telefone do dono. Tem dois botões: Cancela (volta pra tela anterior) e Reservar (vai pra tela de Confirmar Reservas)
+Tela de "Confirmar Reserva" -> Lista os dados da oferta selecionada e tem 1 campo em branco onde o usuário adiciona um int com a quantidade de dias e 1 campo checkbox perguntando se o usuário já acertou os detalhes com o dono do carro.
+Tela de "Exibir Reservas" -> Lista as reservas feitas pelo usuário. Informações: Andamento (Em andamento / Finalizada), Nome do dono do carro, Data de Início, Data Final, Valor Total. Tem o botão "Excluir Reserva" e o "Voltar"

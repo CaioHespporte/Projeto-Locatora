@@ -20,6 +20,12 @@ namespace Locatora.Service.Validators
             RuleFor(c => c.Valor_dia)
                 .NotEmpty().WithMessage("Por favor informe o valor diário.")
                 .NotNull().WithMessage("Por favor informe o valor diário.");
+            RuleFor(c => c.Cidade)
+                .NotEmpty().WithMessage("Por favor informe a cidade onde o veículo se localiza.")
+                .NotNull().WithMessage("Por favor informe a cidade onde o veículo se localiza.");
+            RuleFor(c => c.Estado)
+                .NotEmpty().WithMessage("Por favor informe o estado onde o veículo se localiza.")
+                .NotNull().WithMessage("Por favor informe o estado onde o veículo se localiza.");
         }
     }
 }

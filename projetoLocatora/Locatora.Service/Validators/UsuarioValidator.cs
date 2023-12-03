@@ -28,6 +28,10 @@ namespace IFSPStore.Service.Validators
                 .NotEmpty().WithMessage("Por favor informe a CPF.")
                 .NotNull().WithMessage("Por favor informe a CPF.");
 
+            RuleFor(c => c.Telefone)
+                .NotEmpty().WithMessage("Por favor informe um número de telefone.")
+                .NotNull().WithMessage("Por favor informe um número de telefone.");
+
             RuleFor(c => c.DataNascimento)
                 .NotEmpty().WithMessage("Por favor informe a data de nascimento.")
                 .NotNull().WithMessage("Por favor informe a data de nascimento.");

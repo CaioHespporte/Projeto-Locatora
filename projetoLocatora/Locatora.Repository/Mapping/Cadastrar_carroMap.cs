@@ -20,6 +20,14 @@ namespace Locatora.Repository.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(8)");
 
+            builder.Property(prop => prop.Cidade)
+                .IsRequired()
+                .HasColumnType("varchar(30)");
+
+            builder.Property(prop => prop.Estado)
+                .IsRequired()
+                .HasColumnType("varchar(2)");
+
             builder.Property(prop => prop.Ano)
                 .IsRequired()
                 .HasColumnType("int(4)");

@@ -25,7 +25,11 @@ namespace Locatora.Repository.Mapping
             builder.Property(prop => prop.Senha)
                 .IsRequired()
                 .HasColumnType("varchar(100)");
-            
+
+            builder.Property(prop => prop.Telefone)
+                .IsRequired()
+                .HasColumnType("varchar(11)");
+
             builder.Property(prop => prop.Rg)
                 .IsRequired()
                 .HasColumnType("int(9)");
