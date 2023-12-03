@@ -2,7 +2,7 @@
 using Locatora.Repository.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace IFSPStore.Repository.Repository
+namespace Locatora.Repository.Repository
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity<int>
     {
