@@ -1,5 +1,4 @@
-﻿using IFSPStore.Repository.Mapping;
-using Locatora.Domain.Entities;
+﻿using Locatora.Domain.Entities;
 using Locatora.Repository.Mapping;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,7 +23,7 @@ namespace Locatora.Repository.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Usuario>(new UsuarioMap().Configure);            
+            modelBuilder.Entity<Usuario>(new UsuarioMap().Configure);
             modelBuilder.Entity<Oferta>(new OfertaMap().Configure);
             modelBuilder.Entity<Ofertas_reserva>(new Ofertas_reservaMap().Configure);
             modelBuilder.Entity<Cadastrar_carro>(new Cadastrar_carroMap().Configure);

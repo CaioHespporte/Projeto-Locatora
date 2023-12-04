@@ -10,6 +10,7 @@ using Locatora.Repository.Repository;
 using Locatora.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.VisualBasic.ApplicationServices;
 
 
 namespace Locatora.App.Infra
@@ -79,9 +80,9 @@ namespace Locatora.App.Infra
                     .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome));
 
                 config.CreateMap<Ofertas_reserva, Ofertas_reservaModel>()
-                    .ForMember(d => d.IdUsuario,d => d.MapFrom(x => x.Usuario!.Id))
+                    .ForMember(d => d.IdUsuario, d => d.MapFrom(x => x.Usuario!.Id))
                     .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome))
-                    .ForMember(d => d.IdCadastrar_Carro,d => d.MapFrom(x => x.Cadastrar_carro!.Id))
+                    .ForMember(d => d.IdCadastrar_Carro, d => d.MapFrom(x => x.Cadastrar_carro!.Id))
                     .ForMember(d => d.Cadastrar_carro, d => d.MapFrom(x => x.Cadastrar_carro!.Modelo));
 
             }).CreateMapper());

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jXadi/jo8Fe23pm6MtsxuX5mxbR39hqUi4XDpVXbQii2zYLEEAcUbTrK4qAFhrCe60DBWjrKIUnoua/4aTXDLA==",
+  "dgSpecHash": "r4WIqEyS1XISGrh4nSnkY92ZS+V7FJtKVw3BJZQqTtjQmjmi++DtGl3qz4BGvRImw8hW+nGLVcgcdggmONmpsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.App\\Locatora.App.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.14\\microsoft.entityframeworkcore.7.0.14.nupkg.sha512",
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.14\\microsoft.entityframeworkcore.abstractions.7.0.14.nupkg.sha512",
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.14\\microsoft.entityframeworkcore.analyzers.7.0.14.nupkg.sha512",
-    "C:\\Users\\caioh\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
+    "C:\\Users\\caioh\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.14\\microsoft.entityframeworkcore.relational.7.0.14.nupkg.sha512",
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\caioh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

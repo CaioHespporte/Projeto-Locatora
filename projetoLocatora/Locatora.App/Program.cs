@@ -1,3 +1,5 @@
+using Locatora.App.Infra;
+
 namespace Locatora.App
 {
     internal static class Program
@@ -8,6 +10,7 @@ namespace Locatora.App
         [STAThread]
         static void Main()
         {
+            ConfigureDI.ConfiguraServices();
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();

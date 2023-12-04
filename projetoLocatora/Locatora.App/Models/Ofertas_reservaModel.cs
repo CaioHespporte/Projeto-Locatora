@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Locatora.App.Models
+﻿namespace Locatora.App.Models
 {
     public class OfertaModel
     {
@@ -19,10 +17,10 @@ namespace Locatora.App.Models
     public class Ofertas_reservaModel
     {
         public int Id { get; set; }
-        public float Preco { get; set; }        
+        public float Preco { get; set; }
         public int IdUsuario { get; set; }
         public required string Usuario { get; set; }
         public int IdCadastrar_Carro { get; set; }
-        public required string Cadastrar_carro { get; set; }      
+        public required string Cadastrar_carro { get; set; }
     }
 }

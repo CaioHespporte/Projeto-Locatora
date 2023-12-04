@@ -16,7 +16,7 @@ namespace Locatora.Service.Validators
 
     public class OfertaValidator : AbstractValidator<Oferta>
     {
-        public OfertaValidator() 
+        public OfertaValidator()
         {
             RuleFor(c => c.Data)
                 .NotEmpty().WithMessage("Por favor informe a data.")

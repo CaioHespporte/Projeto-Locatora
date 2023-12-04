@@ -28,171 +28,162 @@
         /// </summary>
         private void InitializeComponent()
         {
-            materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
-            mlblNome = new ReaLTaiizor.Controls.MaterialLabel();
-            materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton3 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton4 = new ReaLTaiizor.Controls.MaterialButton();
+            btnLogin = new ReaLTaiizor.Controls.MaterialButton();
             groupBox1 = new GroupBox();
+            txtSenha = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtEmail = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             groupBox2 = new GroupBox();
+            btnCadastrarNovoUsuario = new ReaLTaiizor.Controls.MaterialButton();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
-            // materialLabel1
+            // btnLogin
             // 
-            materialLabel1.AutoSize = true;
-            materialLabel1.Depth = 0;
-            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel1.Location = new Point(22, 78);
-            materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new Size(32, 19);
-            materialLabel1.TabIndex = 0;
-            materialLabel1.Text = "Olá, ";
-            // 
-            // mlblNome
-            // 
-            mlblNome.AutoSize = true;
-            mlblNome.Depth = 0;
-            mlblNome.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            mlblNome.Location = new Point(60, 78);
-            mlblNome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            mlblNome.Name = "mlblNome";
-            mlblNome.Size = new Size(1, 0);
-            mlblNome.TabIndex = 1;
-            // 
-            // materialButton1
-            // 
-            materialButton1.AutoSize = false;
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton1.Location = new Point(28, 25);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(239, 36);
-            materialButton1.TabIndex = 2;
-            materialButton1.Text = "Cadastrar carro";
-            materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton2.Location = new Point(28, 73);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(239, 36);
-            materialButton2.TabIndex = 3;
-            materialButton2.Text = "Procurar carro";
-            materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialButton3
-            // 
-            materialButton3.AutoSize = false;
-            materialButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton3.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton3.Depth = 0;
-            materialButton3.HighEmphasis = true;
-            materialButton3.Icon = null;
-            materialButton3.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton3.Location = new Point(28, 121);
-            materialButton3.Margin = new Padding(4, 6, 4, 6);
-            materialButton3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton3.Name = "materialButton3";
-            materialButton3.NoAccentTextColor = Color.Empty;
-            materialButton3.Size = new Size(239, 36);
-            materialButton3.TabIndex = 4;
-            materialButton3.Text = "Exibir Reservas";
-            materialButton3.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton3.UseAccentColor = false;
-            materialButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialButton4
-            // 
-            materialButton4.AutoSize = false;
-            materialButton4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton4.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton4.Depth = 0;
-            materialButton4.HighEmphasis = true;
-            materialButton4.Icon = null;
-            materialButton4.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton4.Location = new Point(28, 25);
-            materialButton4.Margin = new Padding(4, 6, 4, 6);
-            materialButton4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton4.Name = "materialButton4";
-            materialButton4.NoAccentTextColor = Color.Empty;
-            materialButton4.Size = new Size(239, 36);
-            materialButton4.TabIndex = 5;
-            materialButton4.Text = "Sair";
-            materialButton4.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton4.UseAccentColor = false;
-            materialButton4.UseVisualStyleBackColor = true;
+            btnLogin.AutoSize = false;
+            btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnLogin.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnLogin.Depth = 0;
+            btnLogin.HighEmphasis = true;
+            btnLogin.Icon = null;
+            btnLogin.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnLogin.Location = new Point(28, 132);
+            btnLogin.Margin = new Padding(4, 6, 4, 6);
+            btnLogin.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnLogin.Name = "btnLogin";
+            btnLogin.NoAccentTextColor = Color.Empty;
+            btnLogin.Size = new Size(239, 36);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Login";
+            btnLogin.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnLogin.UseAccentColor = false;
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(materialButton1);
-            groupBox1.Controls.Add(materialButton2);
-            groupBox1.Controls.Add(materialButton3);
+            groupBox1.Controls.Add(txtSenha);
+            groupBox1.Controls.Add(txtEmail);
+            groupBox1.Controls.Add(btnLogin);
             groupBox1.Location = new Point(43, 116);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(288, 171);
+            groupBox1.Size = new Size(288, 184);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             // 
+            // txtSenha
+            // 
+            txtSenha.AnimateReadOnly = false;
+            txtSenha.AutoCompleteMode = AutoCompleteMode.None;
+            txtSenha.AutoCompleteSource = AutoCompleteSource.None;
+            txtSenha.BackgroundImageLayout = ImageLayout.None;
+            txtSenha.CharacterCasing = CharacterCasing.Normal;
+            txtSenha.Depth = 0;
+            txtSenha.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtSenha.HideSelection = true;
+            txtSenha.Hint = "Senha";
+            txtSenha.LeadingIcon = null;
+            txtSenha.Location = new Point(17, 75);
+            txtSenha.MaxLength = 32767;
+            txtSenha.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
+            txtSenha.PrefixSuffixText = null;
+            txtSenha.ReadOnly = false;
+            txtSenha.RightToLeft = RightToLeft.No;
+            txtSenha.SelectedText = "";
+            txtSenha.SelectionLength = 0;
+            txtSenha.SelectionStart = 0;
+            txtSenha.ShortcutsEnabled = true;
+            txtSenha.Size = new Size(250, 48);
+            txtSenha.TabIndex = 6;
+            txtSenha.TabStop = false;
+            txtSenha.TextAlign = HorizontalAlignment.Left;
+            txtSenha.TrailingIcon = null;
+            txtSenha.UseSystemPasswordChar = false;
+            // 
+            // txtEmail
+            // 
+            txtEmail.AnimateReadOnly = false;
+            txtEmail.AutoCompleteMode = AutoCompleteMode.None;
+            txtEmail.AutoCompleteSource = AutoCompleteSource.None;
+            txtEmail.BackgroundImageLayout = ImageLayout.None;
+            txtEmail.CharacterCasing = CharacterCasing.Normal;
+            txtEmail.Depth = 0;
+            txtEmail.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtEmail.HideSelection = true;
+            txtEmail.Hint = "E-mail";
+            txtEmail.LeadingIcon = null;
+            txtEmail.Location = new Point(17, 21);
+            txtEmail.MaxLength = 32767;
+            txtEmail.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtEmail.Name = "txtEmail";
+            txtEmail.PasswordChar = '\0';
+            txtEmail.PrefixSuffixText = null;
+            txtEmail.ReadOnly = false;
+            txtEmail.RightToLeft = RightToLeft.No;
+            txtEmail.SelectedText = "";
+            txtEmail.SelectionLength = 0;
+            txtEmail.SelectionStart = 0;
+            txtEmail.ShortcutsEnabled = true;
+            txtEmail.Size = new Size(250, 48);
+            txtEmail.TabIndex = 5;
+            txtEmail.TabStop = false;
+            txtEmail.TextAlign = HorizontalAlignment.Left;
+            txtEmail.TrailingIcon = null;
+            txtEmail.UseSystemPasswordChar = false;
+            // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(materialButton4);
-            groupBox2.Location = new Point(43, 293);
+            groupBox2.Controls.Add(btnCadastrarNovoUsuario);
+            groupBox2.Location = new Point(43, 306);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(288, 83);
+            groupBox2.Size = new Size(288, 78);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
+            // 
+            // btnCadastrarNovoUsuario
+            // 
+            btnCadastrarNovoUsuario.AutoSize = false;
+            btnCadastrarNovoUsuario.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCadastrarNovoUsuario.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCadastrarNovoUsuario.Depth = 0;
+            btnCadastrarNovoUsuario.HighEmphasis = true;
+            btnCadastrarNovoUsuario.Icon = null;
+            btnCadastrarNovoUsuario.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCadastrarNovoUsuario.Location = new Point(19, 21);
+            btnCadastrarNovoUsuario.Margin = new Padding(4, 6, 4, 6);
+            btnCadastrarNovoUsuario.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCadastrarNovoUsuario.Name = "btnCadastrarNovoUsuario";
+            btnCadastrarNovoUsuario.NoAccentTextColor = Color.Empty;
+            btnCadastrarNovoUsuario.Size = new Size(250, 36);
+            btnCadastrarNovoUsuario.TabIndex = 1;
+            btnCadastrarNovoUsuario.Text = "CADASTRAR NOVO USUÁRIO";
+            btnCadastrarNovoUsuario.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCadastrarNovoUsuario.UseAccentColor = false;
+            btnCadastrarNovoUsuario.UseVisualStyleBackColor = true;
+            btnCadastrarNovoUsuario.Click += btnCadastrarNovoUsuario_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(390, 409);
+            ClientSize = new Size(375, 409);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(mlblNome);
-            Controls.Add(materialLabel1);
             Name = "Login";
-            Text = "Locatora - Feed";
+            Text = "Locatora - Efetuar Login";
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.MaterialLabel materialLabel1;
-        private ReaLTaiizor.Controls.MaterialLabel mlblNome;
-        private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton3;
-        private ReaLTaiizor.Controls.MaterialButton materialButton4;
+        private ReaLTaiizor.Controls.MaterialButton btnLogin;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtSenha;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtEmail;
+        private ReaLTaiizor.Controls.MaterialButton btnCadastrarNovoUsuario;
     }
 }

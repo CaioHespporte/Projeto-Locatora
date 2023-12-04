@@ -2,7 +2,7 @@
 using FluentValidation;
 using Locatora.Domain.Entities;
 
-namespace IFSPStore.Service.Validators
+namespace Locatora.Service.Validators
 {
     public class UsuarioValidator : AbstractValidator<Usuario>
     {

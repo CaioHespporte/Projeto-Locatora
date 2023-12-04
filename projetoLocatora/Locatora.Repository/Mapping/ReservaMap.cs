@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace IFSPStore.Repository.Mapping
+namespace Locatora.Repository.Mapping
 {
     public class ReservaMap : IEntityTypeConfiguration<Reserva>
     {

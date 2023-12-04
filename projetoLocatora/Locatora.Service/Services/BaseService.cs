@@ -2,7 +2,6 @@
 using FluentValidation;
 using Locatora.Domain.Base;
 
-
 namespace Locatora.Service.Services
 {
     public class BaseService<TEntity> : IBaseService<TEntity> where TEntity : IBaseEntity

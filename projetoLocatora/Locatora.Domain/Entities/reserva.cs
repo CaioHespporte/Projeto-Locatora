@@ -1,5 +1,4 @@
 ﻿using Locatora.Domain.Base;
-using Locatora.Domain.Entities;
 
 namespace Locatora.Domain.Entities
 {
@@ -7,7 +6,7 @@ namespace Locatora.Domain.Entities
     {
         public Reserva()
         {
-            
+
         }
 
         public Reserva(int id, string? andamento, float? valor_total, DateTime? data_inicio, DateTime? data_fim, Usuario? usuario, Cadastrar_carro? cadastrar_carro) : base(id)
@@ -20,7 +19,7 @@ namespace Locatora.Domain.Entities
             Cadastrar_carro = cadastrar_carro;
         }
 
-        public string? Andamento { get; set; } 
+        public string? Andamento { get; set; }
         public float? Valor_total { get; set; }
         public DateTime? Data_Inicio { get; set; }
         public DateTime? Data_Fim { get; set; }

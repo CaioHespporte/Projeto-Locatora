@@ -6,10 +6,10 @@ namespace Locatora.Domain.Entities
     {
         public Usuario()
         {
-            
+
         }
 
-        public Usuario(int id, string? nome, string? email, string? telefone, string? senha, string? rg, string? cpf, DateTime dataNascimento, DateTime dataCadastro) : base(id)
+        public Usuario(int id, string? nome, string? email, int? telefone, string? senha, int? rg, int? cpf, DateTime dataNascimento, DateTime dataCadastro) : base(id)
         {
             Nome = nome;
             Email = email;
@@ -24,9 +24,9 @@ namespace Locatora.Domain.Entities
         public string? Nome { get; set; }
         public string? Email { get; set; }
         public string? Senha { get; set; }
-        public string? Telefone { get; set; }
-        public string? Rg { get; set; }
-        public string? CPF { get; set; }
+        public int? Telefone { get; set; }
+        public int? Rg { get; set; }
+        public int? CPF { get; set; }
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
 

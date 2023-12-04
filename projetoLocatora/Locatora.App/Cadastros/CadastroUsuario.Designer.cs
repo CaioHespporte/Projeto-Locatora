@@ -47,7 +47,7 @@
             txtNome.BackgroundImageLayout = ImageLayout.None;
             txtNome.CharacterCasing = CharacterCasing.Normal;
             txtNome.Depth = 0;
-            txtNome.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtNome.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtNome.HideSelection = true;
             txtNome.Hint = "Nome Completo";
             txtNome.LeadingIcon = null;
@@ -78,7 +78,7 @@
             txtEmail.BackgroundImageLayout = ImageLayout.None;
             txtEmail.CharacterCasing = CharacterCasing.Normal;
             txtEmail.Depth = 0;
-            txtEmail.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtEmail.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtEmail.HideSelection = true;
             txtEmail.Hint = "E-mail";
             txtEmail.LeadingIcon = null;
@@ -109,7 +109,7 @@
             txtSenha.BackgroundImageLayout = ImageLayout.None;
             txtSenha.CharacterCasing = CharacterCasing.Normal;
             txtSenha.Depth = 0;
-            txtSenha.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtSenha.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtSenha.HideSelection = true;
             txtSenha.Hint = "Senha";
             txtSenha.LeadingIcon = null;
@@ -184,7 +184,7 @@
             mmtbRG.BeepOnError = false;
             mmtbRG.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             mmtbRG.Depth = 0;
-            mmtbRG.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            mmtbRG.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             mmtbRG.HidePromptOnLeave = false;
             mmtbRG.HideSelection = true;
             mmtbRG.Hint = "RG";
@@ -227,7 +227,7 @@
             mmtbCPF.BeepOnError = false;
             mmtbCPF.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             mmtbCPF.Depth = 0;
-            mmtbCPF.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            mmtbCPF.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             mmtbCPF.HidePromptOnLeave = false;
             mmtbCPF.HideSelection = true;
             mmtbCPF.Hint = "CPF";
@@ -270,7 +270,7 @@
             mmtbTelefone.BeepOnError = false;
             mmtbTelefone.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             mmtbTelefone.Depth = 0;
-            mmtbTelefone.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            mmtbTelefone.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             mmtbTelefone.HidePromptOnLeave = false;
             mmtbTelefone.HideSelection = true;
             mmtbTelefone.Hint = "Celular";
@@ -345,6 +345,7 @@
             materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton2.UseAccentColor = false;
             materialButton2.UseVisualStyleBackColor = true;
+            materialButton2.Click += materialButton2_Click;
             // 
             // CadastroUsuario
             // 
