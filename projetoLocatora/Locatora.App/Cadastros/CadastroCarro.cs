@@ -1,4 +1,7 @@
-﻿using ReaLTaiizor.Forms;
+﻿using Locatora.App.Outros;
+using Locatora.Domain.Entities;
+using Locatora.Service.Validators;
+using ReaLTaiizor.Forms;
 
 namespace Locatora.App.Cadastros
 {
@@ -8,5 +11,8 @@ namespace Locatora.App.Cadastros
         {
             InitializeComponent();
         }
+
+
+
     }
 }

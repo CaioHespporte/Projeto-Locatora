@@ -35,8 +35,8 @@
             cbSeguro = new ReaLTaiizor.Controls.MaterialCheckBox();
             txtCidade = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             cboEstado = new ReaLTaiizor.Controls.MaterialComboBox();
-            materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
+            btnCadastrar = new ReaLTaiizor.Controls.MaterialButton();
+            btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
             SuspendLayout();
             // 
             // txtModelo
@@ -47,7 +47,7 @@
             txtModelo.BackgroundImageLayout = ImageLayout.None;
             txtModelo.CharacterCasing = CharacterCasing.Normal;
             txtModelo.Depth = 0;
-            txtModelo.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtModelo.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtModelo.HideSelection = true;
             txtModelo.Hint = "Modelo";
             txtModelo.LeadingIcon = null;
@@ -78,7 +78,7 @@
             materialTextBoxEdit2.BackgroundImageLayout = ImageLayout.None;
             materialTextBoxEdit2.CharacterCasing = CharacterCasing.Normal;
             materialTextBoxEdit2.Depth = 0;
-            materialTextBoxEdit2.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBoxEdit2.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBoxEdit2.HideSelection = true;
             materialTextBoxEdit2.Hint = "Placa";
             materialTextBoxEdit2.LeadingIcon = null;
@@ -109,7 +109,7 @@
             materialTextBoxEdit3.BackgroundImageLayout = ImageLayout.None;
             materialTextBoxEdit3.CharacterCasing = CharacterCasing.Normal;
             materialTextBoxEdit3.Depth = 0;
-            materialTextBoxEdit3.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBoxEdit3.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBoxEdit3.HideSelection = true;
             materialTextBoxEdit3.Hint = "Ano";
             materialTextBoxEdit3.LeadingIcon = null;
@@ -141,7 +141,7 @@
             mmtbValor_dia.BeepOnError = false;
             mmtbValor_dia.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
             mmtbValor_dia.Depth = 0;
-            mmtbValor_dia.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            mmtbValor_dia.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             mmtbValor_dia.HidePromptOnLeave = false;
             mmtbValor_dia.HideSelection = true;
             mmtbValor_dia.Hint = "Valor da diária";
@@ -200,7 +200,7 @@
             txtCidade.BackgroundImageLayout = ImageLayout.None;
             txtCidade.CharacterCasing = CharacterCasing.Normal;
             txtCidade.Depth = 0;
-            txtCidade.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtCidade.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtCidade.HideSelection = true;
             txtCidade.Hint = "Cidade";
             txtCidade.LeadingIcon = null;
@@ -232,7 +232,7 @@
             cboEstado.DropDownHeight = 174;
             cboEstado.DropDownStyle = ComboBoxStyle.DropDownList;
             cboEstado.DropDownWidth = 121;
-            cboEstado.Font = new Font("Roboto Medium", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cboEstado.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Pixel);
             cboEstado.ForeColor = Color.FromArgb(222, 0, 0, 0);
             cboEstado.FormattingEnabled = true;
             cboEstado.Hint = "Estado";
@@ -247,55 +247,55 @@
             cboEstado.StartIndex = 0;
             cboEstado.TabIndex = 6;
             // 
-            // materialButton1
+            // btnCadastrar
             // 
-            materialButton1.AutoSize = false;
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton1.Location = new Point(301, 341);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(250, 36);
-            materialButton1.TabIndex = 7;
-            materialButton1.Text = "Cadastrar";
-            materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
+            btnCadastrar.AutoSize = false;
+            btnCadastrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCadastrar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCadastrar.Depth = 0;
+            btnCadastrar.HighEmphasis = true;
+            btnCadastrar.Icon = null;
+            btnCadastrar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCadastrar.Location = new Point(301, 341);
+            btnCadastrar.Margin = new Padding(4, 6, 4, 6);
+            btnCadastrar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.NoAccentTextColor = Color.Empty;
+            btnCadastrar.Size = new Size(250, 36);
+            btnCadastrar.TabIndex = 7;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCadastrar.UseAccentColor = false;
+            btnCadastrar.UseVisualStyleBackColor = true;
             // 
-            // materialButton2
+            // btnCancelar
             // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton2.Location = new Point(28, 341);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(250, 36);
-            materialButton2.TabIndex = 8;
-            materialButton2.Text = "cancelar";
-            materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
+            btnCancelar.AutoSize = false;
+            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCancelar.Depth = 0;
+            btnCancelar.HighEmphasis = true;
+            btnCancelar.Icon = null;
+            btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCancelar.Location = new Point(28, 341);
+            btnCancelar.Margin = new Padding(4, 6, 4, 6);
+            btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.NoAccentTextColor = Color.Empty;
+            btnCancelar.Size = new Size(250, 36);
+            btnCancelar.TabIndex = 8;
+            btnCancelar.Text = "&Cancelar";
+            btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelar.UseAccentColor = false;
+            btnCancelar.UseVisualStyleBackColor = true;
             // 
             // CadastroCarro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(588, 395);
-            Controls.Add(materialButton2);
-            Controls.Add(materialButton1);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnCadastrar);
             Controls.Add(cboEstado);
             Controls.Add(txtCidade);
             Controls.Add(cbSeguro);
@@ -318,7 +318,7 @@
         private ReaLTaiizor.Controls.MaterialCheckBox cbSeguro;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtCidade;
         private ReaLTaiizor.Controls.MaterialComboBox cboEstado;
-        private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
+        private ReaLTaiizor.Controls.MaterialButton btnCadastrar;
+        private ReaLTaiizor.Controls.MaterialButton btnCancelar;
     }
 }

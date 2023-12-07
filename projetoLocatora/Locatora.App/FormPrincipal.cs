@@ -60,24 +60,11 @@ namespace Locatora.App
             }
         }
 
-        private void materialButton2_Click(object sender, EventArgs e)
+        private void btnCadastrarCarro_Click(object sender, EventArgs e)
         {
-            Exibeformulario<CadastroUsuario>();
-            this.Close();
-            nt = new Thread(novoForm);
-            nt.SetApartmentState(ApartmentState.STA);
-            nt.Start();
+            Exibeformulario<CadastroCarro>();
         }
 
-
-        private void novoForm()
-        {
-            Application.Run(new CadastroUsuario());
-        }
-
-        private void materialButton4_Click(object sender, EventArgs e)
-        {
-        }
 
 
         private void Exibeformulario<TFormlario>() where TFormlario : Form

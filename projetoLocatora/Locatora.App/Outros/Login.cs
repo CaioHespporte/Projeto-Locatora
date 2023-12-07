@@ -34,7 +34,7 @@ namespace Locatora.App.Outros
 
             if (usuario == null)
             {
-                MessageBox.Show("Usuário e/ou senha inválido(s)!", "IFSP Store", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Usuário e/ou senha inválido(s)!", "Locatora", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtEmail.Focus();
             }
             else
@@ -88,10 +88,12 @@ namespace Locatora.App.Outros
         private void btnCadastrarNovoUsuario_Click(object sender, EventArgs e)
         {
             btnCadastrarNovoUsuario.Enabled = false;
+            btnLogin.Enabled = false;   
             CadastroUsuario cadastrousuario = new CadastroUsuario();
             cadastrousuario.FormClosed += (s, args) =>
             {
                 btnCadastrarNovoUsuario.Enabled = true;
+                btnLogin.Enabled = true;
             };
             cadastrousuario.Show();
 

@@ -13,3 +13,18 @@ C:\Users\caioh\Desktop\Programação Orientada a Eventos\Projeto-Locatora\projet
 C:\Users\caioh\Desktop\Programação Orientada a Eventos\Projeto-Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\refint\Locatora.Service.dll
 C:\Users\caioh\Desktop\Programação Orientada a Eventos\Projeto-Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.pdb
 C:\Users\caioh\Desktop\Programação Orientada a Eventos\Projeto-Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\ref\Locatora.Service.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\bin\Debug\net7.0\Locatora.Service.deps.json
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\bin\Debug\net7.0\Locatora.Service.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\bin\Debug\net7.0\Locatora.Service.pdb
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\bin\Debug\net7.0\Locatora.Domain.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\bin\Debug\net7.0\Locatora.Domain.pdb
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.csproj.AssemblyReference.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.AssemblyInfoInputs.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.AssemblyInfo.cs
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.csproj.CoreCompileInputs.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.csproj.CopyComplete
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\refint\Locatora.Service.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\Locatora.Service.pdb
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Service\obj\Debug\net7.0\ref\Locatora.Service.dll

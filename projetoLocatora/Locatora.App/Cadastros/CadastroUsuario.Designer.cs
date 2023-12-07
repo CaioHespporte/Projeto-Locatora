@@ -35,8 +35,8 @@
             mmtbRG = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             mmtbCPF = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             mmtbTelefone = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
+            btnCadastrar = new ReaLTaiizor.Controls.MaterialButton();
+            btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
             SuspendLayout();
             // 
             // txtNome
@@ -304,56 +304,56 @@
             mmtbTelefone.UseSystemPasswordChar = false;
             mmtbTelefone.ValidatingType = null;
             // 
-            // materialButton1
+            // btnCadastrar
             // 
-            materialButton1.AutoSize = false;
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton1.Location = new Point(291, 344);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(250, 36);
-            materialButton1.TabIndex = 9;
-            materialButton1.Text = "Cadastrar";
-            materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
+            btnCadastrar.AutoSize = false;
+            btnCadastrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCadastrar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCadastrar.Depth = 0;
+            btnCadastrar.HighEmphasis = true;
+            btnCadastrar.Icon = null;
+            btnCadastrar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCadastrar.Location = new Point(291, 344);
+            btnCadastrar.Margin = new Padding(4, 6, 4, 6);
+            btnCadastrar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCadastrar.Name = "btnCadastrar";
+            btnCadastrar.NoAccentTextColor = Color.Empty;
+            btnCadastrar.Size = new Size(250, 36);
+            btnCadastrar.TabIndex = 9;
+            btnCadastrar.Text = "Cadastrar";
+            btnCadastrar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCadastrar.UseAccentColor = false;
+            btnCadastrar.UseVisualStyleBackColor = true;
             // 
-            // materialButton2
+            // btnCancelar
             // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton2.Location = new Point(21, 344);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(250, 36);
-            materialButton2.TabIndex = 10;
-            materialButton2.Text = "Cancelar";
-            materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
-            materialButton2.Click += materialButton2_Click;
+            btnCancelar.AutoSize = false;
+            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCancelar.Depth = 0;
+            btnCancelar.HighEmphasis = true;
+            btnCancelar.Icon = null;
+            btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCancelar.Location = new Point(21, 344);
+            btnCancelar.Margin = new Padding(4, 6, 4, 6);
+            btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.NoAccentTextColor = Color.Empty;
+            btnCancelar.Size = new Size(250, 36);
+            btnCancelar.TabIndex = 10;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelar.UseAccentColor = false;
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += materialButton2_Click;
             // 
             // CadastroUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(575, 404);
-            Controls.Add(materialButton2);
-            Controls.Add(materialButton1);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnCadastrar);
             Controls.Add(mmtbTelefone);
             Controls.Add(mmtbCPF);
             Controls.Add(mmtbRG);
@@ -375,7 +375,7 @@
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbRG;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbCPF;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbTelefone;
-        private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
+        private ReaLTaiizor.Controls.MaterialButton btnCadastrar;
+        private ReaLTaiizor.Controls.MaterialButton btnCancelar;
     }
 }

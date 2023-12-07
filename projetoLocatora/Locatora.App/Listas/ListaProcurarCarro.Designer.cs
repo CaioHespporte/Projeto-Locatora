@@ -32,18 +32,19 @@
             colunaModelo = new ColumnHeader();
             colunaPlaca = new ColumnHeader();
             colunaAno = new ColumnHeader();
-            colunaValor_dia = new ColumnHeader();
             colunaSeguro = new ColumnHeader();
+            colunaValor_dia = new ColumnHeader();
             colunaCidade = new ColumnHeader();
             colunaEstado = new ColumnHeader();
+            colunaTelefone = new ColumnHeader();
             btnReservar = new ReaLTaiizor.Controls.MaterialButton();
             btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
-            colunaTelefone = new ColumnHeader();
             SuspendLayout();
             // 
             // listViewProcurarCarro
             // 
             listViewProcurarCarro.Columns.AddRange(new ColumnHeader[] { colunaModelo, colunaPlaca, colunaAno, colunaSeguro, colunaValor_dia, colunaCidade, colunaEstado, colunaTelefone });
+            listViewProcurarCarro.FullRowSelect = true;
             listViewProcurarCarro.GridLines = true;
             listViewProcurarCarro.Location = new Point(29, 87);
             listViewProcurarCarro.MultiSelect = false;
@@ -68,15 +69,15 @@
             colunaAno.Text = "Ano";
             colunaAno.Width = 80;
             // 
-            // colunaValor_dia
-            // 
-            colunaValor_dia.Text = "Valor da diária";
-            colunaValor_dia.Width = 120;
-            // 
             // colunaSeguro
             // 
             colunaSeguro.Text = "Seguro?";
             colunaSeguro.Width = 90;
+            // 
+            // colunaValor_dia
+            // 
+            colunaValor_dia.Text = "Valor da diária";
+            colunaValor_dia.Width = 120;
             // 
             // colunaCidade
             // 
@@ -87,6 +88,11 @@
             // 
             colunaEstado.Text = "Estado";
             colunaEstado.Width = 80;
+            // 
+            // colunaTelefone
+            // 
+            colunaTelefone.Text = "Celular";
+            colunaTelefone.Width = 120;
             // 
             // btnReservar
             // 
@@ -129,11 +135,6 @@
             btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnCancelar.UseAccentColor = false;
             btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // colunaTelefone
-            // 
-            colunaTelefone.Text = "Celular";
-            colunaTelefone.Width = 120;
             // 
             // ListaProcurarCarro
             // 

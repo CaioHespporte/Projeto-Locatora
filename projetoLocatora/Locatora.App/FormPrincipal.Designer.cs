@@ -31,11 +31,11 @@
             mlblNome = new ReaLTaiizor.Controls.MaterialLabel();
             materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
             groupBox2 = new GroupBox();
-            materialButton4 = new ReaLTaiizor.Controls.MaterialButton();
+            btnSair = new ReaLTaiizor.Controls.MaterialButton();
             groupBox1 = new GroupBox();
-            materialButton1 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton2 = new ReaLTaiizor.Controls.MaterialButton();
-            materialButton3 = new ReaLTaiizor.Controls.MaterialButton();
+            btnCadastrarCarro = new ReaLTaiizor.Controls.MaterialButton();
+            btnProcurarCarro = new ReaLTaiizor.Controls.MaterialButton();
+            btnExibirReservas = new ReaLTaiizor.Controls.MaterialButton();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -65,108 +65,108 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(materialButton4);
+            groupBox2.Controls.Add(btnSair);
             groupBox2.Location = new Point(105, 294);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(288, 83);
             groupBox2.TabIndex = 12;
             groupBox2.TabStop = false;
             // 
-            // materialButton4
+            // btnSair
             // 
-            materialButton4.AutoSize = false;
-            materialButton4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton4.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton4.Depth = 0;
-            materialButton4.HighEmphasis = true;
-            materialButton4.Icon = null;
-            materialButton4.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton4.Location = new Point(28, 25);
-            materialButton4.Margin = new Padding(4, 6, 4, 6);
-            materialButton4.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton4.Name = "materialButton4";
-            materialButton4.NoAccentTextColor = Color.Empty;
-            materialButton4.Size = new Size(239, 36);
-            materialButton4.TabIndex = 5;
-            materialButton4.Text = "Sair";
-            materialButton4.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton4.UseAccentColor = false;
-            materialButton4.UseVisualStyleBackColor = true;
-            materialButton4.Click += materialButton4_Click;
+            btnSair.AutoSize = false;
+            btnSair.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnSair.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnSair.Depth = 0;
+            btnSair.HighEmphasis = true;
+            btnSair.Icon = null;
+            btnSair.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnSair.Location = new Point(28, 25);
+            btnSair.Margin = new Padding(4, 6, 4, 6);
+            btnSair.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnSair.Name = "btnSair";
+            btnSair.NoAccentTextColor = Color.Empty;
+            btnSair.Size = new Size(239, 36);
+            btnSair.TabIndex = 5;
+            btnSair.Text = "Sair";
+            btnSair.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnSair.UseAccentColor = false;
+            btnSair.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(materialButton1);
-            groupBox1.Controls.Add(materialButton2);
-            groupBox1.Controls.Add(materialButton3);
+            groupBox1.Controls.Add(btnCadastrarCarro);
+            groupBox1.Controls.Add(btnProcurarCarro);
+            groupBox1.Controls.Add(btnExibirReservas);
             groupBox1.Location = new Point(105, 96);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(288, 171);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
             // 
-            // materialButton1
+            // btnCadastrarCarro
             // 
-            materialButton1.AutoSize = false;
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton1.Location = new Point(28, 25);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(239, 36);
-            materialButton1.TabIndex = 2;
-            materialButton1.Text = "Cadastrar carro";
-            materialButton1.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
+            btnCadastrarCarro.AutoSize = false;
+            btnCadastrarCarro.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCadastrarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCadastrarCarro.Depth = 0;
+            btnCadastrarCarro.HighEmphasis = true;
+            btnCadastrarCarro.Icon = null;
+            btnCadastrarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnCadastrarCarro.Location = new Point(28, 25);
+            btnCadastrarCarro.Margin = new Padding(4, 6, 4, 6);
+            btnCadastrarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnCadastrarCarro.Name = "btnCadastrarCarro";
+            btnCadastrarCarro.NoAccentTextColor = Color.Empty;
+            btnCadastrarCarro.Size = new Size(239, 36);
+            btnCadastrarCarro.TabIndex = 2;
+            btnCadastrarCarro.Text = "Cadastrar carro";
+            btnCadastrarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCadastrarCarro.UseAccentColor = false;
+            btnCadastrarCarro.UseVisualStyleBackColor = true;
+            btnCadastrarCarro.Click += btnCadastrarCarro_Click;
             // 
-            // materialButton2
+            // btnProcurarCarro
             // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton2.Location = new Point(28, 73);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(239, 36);
-            materialButton2.TabIndex = 3;
-            materialButton2.Text = "Procurar carro";
-            materialButton2.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
+            btnProcurarCarro.AutoSize = false;
+            btnProcurarCarro.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnProcurarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnProcurarCarro.Depth = 0;
+            btnProcurarCarro.HighEmphasis = true;
+            btnProcurarCarro.Icon = null;
+            btnProcurarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnProcurarCarro.Location = new Point(28, 73);
+            btnProcurarCarro.Margin = new Padding(4, 6, 4, 6);
+            btnProcurarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnProcurarCarro.Name = "btnProcurarCarro";
+            btnProcurarCarro.NoAccentTextColor = Color.Empty;
+            btnProcurarCarro.Size = new Size(239, 36);
+            btnProcurarCarro.TabIndex = 3;
+            btnProcurarCarro.Text = "Procurar carro";
+            btnProcurarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnProcurarCarro.UseAccentColor = false;
+            btnProcurarCarro.UseVisualStyleBackColor = true;
             // 
-            // materialButton3
+            // btnExibirReservas
             // 
-            materialButton3.AutoSize = false;
-            materialButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton3.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton3.Depth = 0;
-            materialButton3.HighEmphasis = true;
-            materialButton3.Icon = null;
-            materialButton3.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            materialButton3.Location = new Point(28, 121);
-            materialButton3.Margin = new Padding(4, 6, 4, 6);
-            materialButton3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialButton3.Name = "materialButton3";
-            materialButton3.NoAccentTextColor = Color.Empty;
-            materialButton3.Size = new Size(239, 36);
-            materialButton3.TabIndex = 4;
-            materialButton3.Text = "Exibir Reservas";
-            materialButton3.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton3.UseAccentColor = false;
-            materialButton3.UseVisualStyleBackColor = true;
+            btnExibirReservas.AutoSize = false;
+            btnExibirReservas.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnExibirReservas.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnExibirReservas.Depth = 0;
+            btnExibirReservas.HighEmphasis = true;
+            btnExibirReservas.Icon = null;
+            btnExibirReservas.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnExibirReservas.Location = new Point(28, 121);
+            btnExibirReservas.Margin = new Padding(4, 6, 4, 6);
+            btnExibirReservas.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnExibirReservas.Name = "btnExibirReservas";
+            btnExibirReservas.NoAccentTextColor = Color.Empty;
+            btnExibirReservas.Size = new Size(239, 36);
+            btnExibirReservas.TabIndex = 4;
+            btnExibirReservas.Text = "Exibir Reservas";
+            btnExibirReservas.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnExibirReservas.UseAccentColor = false;
+            btnExibirReservas.UseVisualStyleBackColor = true;
             // 
             // FormPrincipal
             // 
@@ -180,6 +180,7 @@
             IsMdiContainer = true;
             Name = "FormPrincipal";
             Text = "Locatora - Tela Inicial";
+            FormClosing += FormPrincipal_FormClosing;
             groupBox2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
@@ -191,10 +192,10 @@
         private ReaLTaiizor.Controls.MaterialLabel mlblNome;
         private ReaLTaiizor.Controls.MaterialLabel materialLabel1;
         private GroupBox groupBox2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton4;
+        private ReaLTaiizor.Controls.MaterialButton btnSair;
         private GroupBox groupBox1;
-        private ReaLTaiizor.Controls.MaterialButton materialButton1;
-        private ReaLTaiizor.Controls.MaterialButton materialButton2;
-        private ReaLTaiizor.Controls.MaterialButton materialButton3;
+        private ReaLTaiizor.Controls.MaterialButton btnCadastrarCarro;
+        private ReaLTaiizor.Controls.MaterialButton btnProcurarCarro;
+        private ReaLTaiizor.Controls.MaterialButton btnExibirReservas;
     }
 }
