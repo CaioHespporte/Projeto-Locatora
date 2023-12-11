@@ -35,8 +35,7 @@
             mmtbRG = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             mmtbCPF = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             mmtbTelefone = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
-            btnCadastrar = new ReaLTaiizor.Controls.MaterialButton();
-            btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
+            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             SuspendLayout();
             // 
             // txtNome
@@ -166,7 +165,7 @@
             mmtbDtNascimento.ShortcutsEnabled = true;
             mmtbDtNascimento.Size = new Size(250, 48);
             mmtbDtNascimento.SkipLiterals = true;
-            mmtbDtNascimento.TabIndex = 5;
+            mmtbDtNascimento.TabIndex = 6;
             mmtbDtNascimento.TabStop = false;
             mmtbDtNascimento.Text = "  /  /";
             mmtbDtNascimento.TextAlign = HorizontalAlignment.Left;
@@ -209,7 +208,7 @@
             mmtbRG.ShortcutsEnabled = true;
             mmtbRG.Size = new Size(250, 48);
             mmtbRG.SkipLiterals = true;
-            mmtbRG.TabIndex = 6;
+            mmtbRG.TabIndex = 3;
             mmtbRG.TabStop = false;
             mmtbRG.Text = "  ,   ,   -";
             mmtbRG.TextAlign = HorizontalAlignment.Left;
@@ -252,7 +251,7 @@
             mmtbCPF.ShortcutsEnabled = true;
             mmtbCPF.Size = new Size(250, 48);
             mmtbCPF.SkipLiterals = true;
-            mmtbCPF.TabIndex = 7;
+            mmtbCPF.TabIndex = 4;
             mmtbCPF.TabStop = false;
             mmtbCPF.Text = "   ,   ,   -";
             mmtbCPF.TextAlign = HorizontalAlignment.Left;
@@ -277,7 +276,7 @@
             mmtbTelefone.InsertKeyMode = InsertKeyMode.Default;
             mmtbTelefone.LeadingIcon = null;
             mmtbTelefone.Location = new Point(21, 273);
-            mmtbTelefone.Mask = "(99) 99999-9999";
+            mmtbTelefone.Mask = "(99)99999-9999";
             mmtbTelefone.MaxLength = 32767;
             mmtbTelefone.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             mmtbTelefone.Name = "mmtbTelefone";
@@ -295,65 +294,52 @@
             mmtbTelefone.ShortcutsEnabled = true;
             mmtbTelefone.Size = new Size(250, 48);
             mmtbTelefone.SkipLiterals = true;
-            mmtbTelefone.TabIndex = 8;
+            mmtbTelefone.TabIndex = 5;
             mmtbTelefone.TabStop = false;
-            mmtbTelefone.Text = "(  )      -";
+            mmtbTelefone.Text = "(  )     -";
             mmtbTelefone.TextAlign = HorizontalAlignment.Left;
             mmtbTelefone.TextMaskFormat = MaskFormat.IncludeLiterals;
             mmtbTelefone.TrailingIcon = null;
             mmtbTelefone.UseSystemPasswordChar = false;
             mmtbTelefone.ValidatingType = null;
             // 
-            // btnCadastrar
+            // txtId
             // 
-            btnCadastrar.AutoSize = false;
-            btnCadastrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCadastrar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCadastrar.Depth = 0;
-            btnCadastrar.HighEmphasis = true;
-            btnCadastrar.Icon = null;
-            btnCadastrar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCadastrar.Location = new Point(291, 344);
-            btnCadastrar.Margin = new Padding(4, 6, 4, 6);
-            btnCadastrar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.NoAccentTextColor = Color.Empty;
-            btnCadastrar.Size = new Size(250, 36);
-            btnCadastrar.TabIndex = 9;
-            btnCadastrar.Text = "Cadastrar";
-            btnCadastrar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCadastrar.UseAccentColor = false;
-            btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.AutoSize = false;
-            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCancelar.Depth = 0;
-            btnCancelar.HighEmphasis = true;
-            btnCancelar.Icon = null;
-            btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCancelar.Location = new Point(21, 344);
-            btnCancelar.Margin = new Padding(4, 6, 4, 6);
-            btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.NoAccentTextColor = Color.Empty;
-            btnCancelar.Size = new Size(250, 36);
-            btnCancelar.TabIndex = 10;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCancelar.UseAccentColor = false;
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += materialButton2_Click;
+            txtId.AnimateReadOnly = false;
+            txtId.AutoCompleteMode = AutoCompleteMode.None;
+            txtId.AutoCompleteSource = AutoCompleteSource.None;
+            txtId.BackgroundImageLayout = ImageLayout.None;
+            txtId.CharacterCasing = CharacterCasing.Normal;
+            txtId.Depth = 0;
+            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtId.HideSelection = true;
+            txtId.LeadingIcon = null;
+            txtId.Location = new Point(757, 339);
+            txtId.MaxLength = 32767;
+            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtId.Name = "txtId";
+            txtId.PasswordChar = '\0';
+            txtId.PrefixSuffixText = null;
+            txtId.ReadOnly = false;
+            txtId.RightToLeft = RightToLeft.No;
+            txtId.SelectedText = "";
+            txtId.SelectionLength = 0;
+            txtId.SelectionStart = 0;
+            txtId.ShortcutsEnabled = true;
+            txtId.Size = new Size(47, 48);
+            txtId.TabIndex = 14;
+            txtId.TabStop = false;
+            txtId.Text = "Id";
+            txtId.TextAlign = HorizontalAlignment.Left;
+            txtId.TrailingIcon = null;
+            txtId.UseSystemPasswordChar = false;
             // 
             // CadastroUsuario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(575, 404);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnCadastrar);
+            Controls.Add(txtId);
             Controls.Add(mmtbTelefone);
             Controls.Add(mmtbCPF);
             Controls.Add(mmtbRG);
@@ -363,6 +349,14 @@
             Controls.Add(txtNome);
             Name = "CadastroUsuario";
             Text = "Locatora - Cadastro de Usuário";
+            Controls.SetChildIndex(txtNome, 0);
+            Controls.SetChildIndex(txtEmail, 0);
+            Controls.SetChildIndex(txtSenha, 0);
+            Controls.SetChildIndex(mmtbDtNascimento, 0);
+            Controls.SetChildIndex(mmtbRG, 0);
+            Controls.SetChildIndex(mmtbCPF, 0);
+            Controls.SetChildIndex(mmtbTelefone, 0);
+            Controls.SetChildIndex(txtId, 0);
             ResumeLayout(false);
         }
 
@@ -375,7 +369,6 @@
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbRG;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbCPF;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbTelefone;
-        private ReaLTaiizor.Controls.MaterialButton btnCadastrar;
-        private ReaLTaiizor.Controls.MaterialButton btnCancelar;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtId;
     }
 }

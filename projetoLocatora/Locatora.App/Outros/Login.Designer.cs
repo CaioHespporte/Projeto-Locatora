@@ -171,7 +171,9 @@
             ClientSize = new Size(375, 409);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            MaximizeBox = false;
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Locatora - Efetuar Login";
             groupBox1.ResumeLayout(false);
             groupBox2.ResumeLayout(false);

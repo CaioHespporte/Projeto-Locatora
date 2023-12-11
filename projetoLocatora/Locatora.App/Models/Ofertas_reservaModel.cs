@@ -1,4 +1,6 @@
-﻿namespace Locatora.App.Models
+﻿
+namespace Locatora.App.Models
+
 {
     public class OfertaModel
     {

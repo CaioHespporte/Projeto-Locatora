@@ -4,6 +4,7 @@ using Locatora.App.Models;
 using Locatora.Domain.Base;
 using Locatora.Domain.Entities;
 using Locatora.Service.Validators;
+using Microsoft.Extensions.DependencyInjection;
 using ReaLTaiizor.Forms;
 using System.Data;
 using System.Threading;
@@ -14,19 +15,17 @@ namespace Locatora.App.Outros
     public partial class Login : MaterialForm
     {
         private readonly IBaseService<Usuario> _usuarioService;
+
         public Login(IBaseService<Usuario> usuarioService)
         {
             _usuarioService = usuarioService;
             InitializeComponent();
 #if DEBUG
-            txtEmail.Text = @"admin";
-            txtSenha.Text = @"admin";
+            txtEmail.Text = @"teste";
+            txtSenha.Text = @"teste";
 #endif
         }
 
-        public Login()
-        {
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -57,6 +56,7 @@ namespace Locatora.App.Outros
                 return null;
             }
             return usuario.Senha != senha ? null : usuario;
+
         }
 
         private void ChecaExistenciaDeUsuariosCadastrados()
@@ -71,8 +71,8 @@ namespace Locatora.App.Outros
                     Email = "admin",
                     Senha = "admin",
                     Rg = 999999999,
-                    CPF = 999999999,
-                    Telefone = 999999999,
+                    CPF = "99999999999",
+                    Telefone = "99999999999",
                     DataNascimento = DateTime.Now,
                 };
                 _usuarioService.Add<Usuario, Usuario, UsuarioValidator>(usuario);
@@ -88,8 +88,8 @@ namespace Locatora.App.Outros
         private void btnCadastrarNovoUsuario_Click(object sender, EventArgs e)
         {
             btnCadastrarNovoUsuario.Enabled = false;
-            btnLogin.Enabled = false;   
-            CadastroUsuario cadastrousuario = new CadastroUsuario();
+            btnLogin.Enabled = false;
+            CadastroUsuario cadastrousuario = new CadastroUsuario(_usuarioService);
             cadastrousuario.FormClosed += (s, args) =>
             {
                 btnCadastrarNovoUsuario.Enabled = true;

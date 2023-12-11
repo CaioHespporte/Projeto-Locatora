@@ -1,5 +1,6 @@
 using Locatora.App.Cadastros;
 using Locatora.App.Infra;
+using Locatora.App.Listas;
 using Locatora.App.Outros;
 using Locatora.Domain.Base;
 using Locatora.Domain.Entities;
@@ -12,14 +13,16 @@ namespace Locatora.App
     public partial class FormPrincipal : MaterialForm
     {
         private readonly IBaseService<Usuario> _usuarioService;
-        Thread nt;
-
 
         public static Usuario Usuario { get; set; }
-        public FormPrincipal()
+        bool logado = false;
+
+        public FormPrincipal(IBaseService<Usuario> usuarioService)
         {
             InitializeComponent();
             CarregaLogin();
+            _usuarioService = usuarioService;
+            logado = true;
         }
 
         private void CarregaLogin()
@@ -38,20 +41,6 @@ namespace Locatora.App
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            nt = new Thread(novoForm2);
-            nt.SetApartmentState(ApartmentState.STA);
-            nt.Start();
-        }
-
-        private void novoForm2()
-        {
-            Application.Run(new Login());
-        }
-
-
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.ApplicationExitCall)
@@ -62,19 +51,43 @@ namespace Locatora.App
 
         private void btnCadastrarCarro_Click(object sender, EventArgs e)
         {
-            Exibeformulario<CadastroCarro>();
+            CadastroCarro.Usuario = Usuario;
+            ExibeFormulario<CadastroCarro>();
         }
 
-
-
-        private void Exibeformulario<TFormlario>() where TFormlario : Form
+        private void btnSair_Click(object sender, EventArgs e)
         {
+            Close();
+        }
+
+        private void btnProcurarCarro_Click(object sender, EventArgs e)
+        {
+            ListaProcurarCarro.Usuario = Usuario;
+            ExibeFormulario<ListaProcurarCarro>();
+        }
+
+        private void ExibeFormulario<TFormlario>() where TFormlario : Form
+        {
+
             var cad = ConfigureDI.ServicesProvider!.GetService<TFormlario>();
             if (cad != null && !cad.IsDisposed)
             {
+
+                btnCadastrarCarro.Enabled = false;
+                btnProcurarCarro.Enabled = false;
+                btnExibirReservas.Enabled = false;
+                btnSair.Enabled = false;
                 cad.MdiParent = this;
                 cad.Show();
+                cad.FormClosed += (sender, e) =>
+                {
+                    btnCadastrarCarro.Enabled = true;
+                    btnProcurarCarro.Enabled = true;
+                    btnExibirReservas.Enabled = true;
+                    btnSair.Enabled = true;
+                };
             }
         }
+
     }
 }

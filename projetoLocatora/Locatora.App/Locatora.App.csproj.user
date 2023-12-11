@@ -22,11 +22,13 @@
     <Compile Update="Outros\ConfirmarReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Outros\Feed.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Outros\Login.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Listas\ListaProcurarCarro.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

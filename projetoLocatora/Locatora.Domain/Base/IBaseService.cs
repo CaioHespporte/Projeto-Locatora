@@ -20,5 +20,8 @@ namespace Locatora.Domain.Base
             where TValidator : AbstractValidator<TEntity>
             where TInputModel : class
             where TOutputModel : class;
+
+        //IEnumerable<TOutputModel> GetAll<TOutputModel>() where TOutputModel : class; ///método pra selecionar tudo no banco
+
     }
 }

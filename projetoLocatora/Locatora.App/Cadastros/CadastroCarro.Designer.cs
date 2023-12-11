@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             txtModelo = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            materialTextBoxEdit2 = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            materialTextBoxEdit3 = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtPlaca = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtAno = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             mmtbValor_dia = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
             cbSeguro = new ReaLTaiizor.Controls.MaterialCheckBox();
             txtCidade = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             cboEstado = new ReaLTaiizor.Controls.MaterialComboBox();
-            btnCadastrar = new ReaLTaiizor.Controls.MaterialButton();
-            btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
+            txtId = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
             SuspendLayout();
             // 
             // txtModelo
@@ -70,67 +69,67 @@
             txtModelo.TrailingIcon = null;
             txtModelo.UseSystemPasswordChar = false;
             // 
-            // materialTextBoxEdit2
+            // txtPlaca
             // 
-            materialTextBoxEdit2.AnimateReadOnly = false;
-            materialTextBoxEdit2.AutoCompleteMode = AutoCompleteMode.None;
-            materialTextBoxEdit2.AutoCompleteSource = AutoCompleteSource.None;
-            materialTextBoxEdit2.BackgroundImageLayout = ImageLayout.None;
-            materialTextBoxEdit2.CharacterCasing = CharacterCasing.Normal;
-            materialTextBoxEdit2.Depth = 0;
-            materialTextBoxEdit2.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialTextBoxEdit2.HideSelection = true;
-            materialTextBoxEdit2.Hint = "Placa";
-            materialTextBoxEdit2.LeadingIcon = null;
-            materialTextBoxEdit2.Location = new Point(301, 86);
-            materialTextBoxEdit2.MaxLength = 32767;
-            materialTextBoxEdit2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            materialTextBoxEdit2.Name = "materialTextBoxEdit2";
-            materialTextBoxEdit2.PasswordChar = '\0';
-            materialTextBoxEdit2.PrefixSuffixText = null;
-            materialTextBoxEdit2.ReadOnly = false;
-            materialTextBoxEdit2.RightToLeft = RightToLeft.No;
-            materialTextBoxEdit2.SelectedText = "";
-            materialTextBoxEdit2.SelectionLength = 0;
-            materialTextBoxEdit2.SelectionStart = 0;
-            materialTextBoxEdit2.ShortcutsEnabled = true;
-            materialTextBoxEdit2.Size = new Size(250, 48);
-            materialTextBoxEdit2.TabIndex = 1;
-            materialTextBoxEdit2.TabStop = false;
-            materialTextBoxEdit2.TextAlign = HorizontalAlignment.Left;
-            materialTextBoxEdit2.TrailingIcon = null;
-            materialTextBoxEdit2.UseSystemPasswordChar = false;
+            txtPlaca.AnimateReadOnly = false;
+            txtPlaca.AutoCompleteMode = AutoCompleteMode.None;
+            txtPlaca.AutoCompleteSource = AutoCompleteSource.None;
+            txtPlaca.BackgroundImageLayout = ImageLayout.None;
+            txtPlaca.CharacterCasing = CharacterCasing.Normal;
+            txtPlaca.Depth = 0;
+            txtPlaca.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtPlaca.HideSelection = true;
+            txtPlaca.Hint = "Placa";
+            txtPlaca.LeadingIcon = null;
+            txtPlaca.Location = new Point(301, 86);
+            txtPlaca.MaxLength = 32767;
+            txtPlaca.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtPlaca.Name = "txtPlaca";
+            txtPlaca.PasswordChar = '\0';
+            txtPlaca.PrefixSuffixText = null;
+            txtPlaca.ReadOnly = false;
+            txtPlaca.RightToLeft = RightToLeft.No;
+            txtPlaca.SelectedText = "";
+            txtPlaca.SelectionLength = 0;
+            txtPlaca.SelectionStart = 0;
+            txtPlaca.ShortcutsEnabled = true;
+            txtPlaca.Size = new Size(250, 48);
+            txtPlaca.TabIndex = 1;
+            txtPlaca.TabStop = false;
+            txtPlaca.TextAlign = HorizontalAlignment.Left;
+            txtPlaca.TrailingIcon = null;
+            txtPlaca.UseSystemPasswordChar = false;
             // 
-            // materialTextBoxEdit3
+            // txtAno
             // 
-            materialTextBoxEdit3.AnimateReadOnly = false;
-            materialTextBoxEdit3.AutoCompleteMode = AutoCompleteMode.None;
-            materialTextBoxEdit3.AutoCompleteSource = AutoCompleteSource.None;
-            materialTextBoxEdit3.BackgroundImageLayout = ImageLayout.None;
-            materialTextBoxEdit3.CharacterCasing = CharacterCasing.Normal;
-            materialTextBoxEdit3.Depth = 0;
-            materialTextBoxEdit3.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialTextBoxEdit3.HideSelection = true;
-            materialTextBoxEdit3.Hint = "Ano";
-            materialTextBoxEdit3.LeadingIcon = null;
-            materialTextBoxEdit3.Location = new Point(28, 156);
-            materialTextBoxEdit3.MaxLength = 32767;
-            materialTextBoxEdit3.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            materialTextBoxEdit3.Name = "materialTextBoxEdit3";
-            materialTextBoxEdit3.PasswordChar = '\0';
-            materialTextBoxEdit3.PrefixSuffixText = null;
-            materialTextBoxEdit3.ReadOnly = false;
-            materialTextBoxEdit3.RightToLeft = RightToLeft.No;
-            materialTextBoxEdit3.SelectedText = "";
-            materialTextBoxEdit3.SelectionLength = 0;
-            materialTextBoxEdit3.SelectionStart = 0;
-            materialTextBoxEdit3.ShortcutsEnabled = true;
-            materialTextBoxEdit3.Size = new Size(250, 48);
-            materialTextBoxEdit3.TabIndex = 2;
-            materialTextBoxEdit3.TabStop = false;
-            materialTextBoxEdit3.TextAlign = HorizontalAlignment.Left;
-            materialTextBoxEdit3.TrailingIcon = null;
-            materialTextBoxEdit3.UseSystemPasswordChar = false;
+            txtAno.AnimateReadOnly = false;
+            txtAno.AutoCompleteMode = AutoCompleteMode.None;
+            txtAno.AutoCompleteSource = AutoCompleteSource.None;
+            txtAno.BackgroundImageLayout = ImageLayout.None;
+            txtAno.CharacterCasing = CharacterCasing.Normal;
+            txtAno.Depth = 0;
+            txtAno.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtAno.HideSelection = true;
+            txtAno.Hint = "Ano";
+            txtAno.LeadingIcon = null;
+            txtAno.Location = new Point(28, 156);
+            txtAno.MaxLength = 32767;
+            txtAno.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtAno.Name = "txtAno";
+            txtAno.PasswordChar = '\0';
+            txtAno.PrefixSuffixText = null;
+            txtAno.ReadOnly = false;
+            txtAno.RightToLeft = RightToLeft.No;
+            txtAno.SelectedText = "";
+            txtAno.SelectionLength = 0;
+            txtAno.SelectionStart = 0;
+            txtAno.ShortcutsEnabled = true;
+            txtAno.Size = new Size(250, 48);
+            txtAno.TabIndex = 2;
+            txtAno.TabStop = false;
+            txtAno.TextAlign = HorizontalAlignment.Left;
+            txtAno.TrailingIcon = null;
+            txtAno.UseSystemPasswordChar = false;
             // 
             // mmtbValor_dia
             // 
@@ -187,7 +186,7 @@
             cbSeguro.ReadOnly = false;
             cbSeguro.Ripple = true;
             cbSeguro.Size = new Size(203, 37);
-            cbSeguro.TabIndex = 4;
+            cbSeguro.TabIndex = 7;
             cbSeguro.Text = "O veículo possui seguro";
             cbSeguro.UseAccentColor = false;
             cbSeguro.UseVisualStyleBackColor = true;
@@ -247,64 +246,61 @@
             cboEstado.StartIndex = 0;
             cboEstado.TabIndex = 6;
             // 
-            // btnCadastrar
+            // txtId
             // 
-            btnCadastrar.AutoSize = false;
-            btnCadastrar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCadastrar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCadastrar.Depth = 0;
-            btnCadastrar.HighEmphasis = true;
-            btnCadastrar.Icon = null;
-            btnCadastrar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCadastrar.Location = new Point(301, 341);
-            btnCadastrar.Margin = new Padding(4, 6, 4, 6);
-            btnCadastrar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.NoAccentTextColor = Color.Empty;
-            btnCadastrar.Size = new Size(250, 36);
-            btnCadastrar.TabIndex = 7;
-            btnCadastrar.Text = "Cadastrar";
-            btnCadastrar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCadastrar.UseAccentColor = false;
-            btnCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.AutoSize = false;
-            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCancelar.Depth = 0;
-            btnCancelar.HighEmphasis = true;
-            btnCancelar.Icon = null;
-            btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCancelar.Location = new Point(28, 341);
-            btnCancelar.Margin = new Padding(4, 6, 4, 6);
-            btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.NoAccentTextColor = Color.Empty;
-            btnCancelar.Size = new Size(250, 36);
-            btnCancelar.TabIndex = 8;
-            btnCancelar.Text = "&Cancelar";
-            btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCancelar.UseAccentColor = false;
-            btnCancelar.UseVisualStyleBackColor = true;
+            txtId.AnimateReadOnly = false;
+            txtId.AutoCompleteMode = AutoCompleteMode.None;
+            txtId.AutoCompleteSource = AutoCompleteSource.None;
+            txtId.BackgroundImageLayout = ImageLayout.None;
+            txtId.CharacterCasing = CharacterCasing.Normal;
+            txtId.Depth = 0;
+            txtId.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtId.HideSelection = true;
+            txtId.Hint = "Id";
+            txtId.LeadingIcon = null;
+            txtId.Location = new Point(592, 334);
+            txtId.MaxLength = 32767;
+            txtId.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
+            txtId.Name = "txtId";
+            txtId.PasswordChar = '\0';
+            txtId.PrefixSuffixText = null;
+            txtId.ReadOnly = true;
+            txtId.RightToLeft = RightToLeft.No;
+            txtId.SelectedText = "";
+            txtId.SelectionLength = 0;
+            txtId.SelectionStart = 0;
+            txtId.ShortcutsEnabled = true;
+            txtId.Size = new Size(55, 48);
+            txtId.TabIndex = 13;
+            txtId.TabStop = false;
+            txtId.TextAlign = HorizontalAlignment.Left;
+            txtId.TrailingIcon = null;
+            txtId.UseSystemPasswordChar = false;
             // 
             // CadastroCarro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(588, 395);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnCadastrar);
             Controls.Add(cboEstado);
             Controls.Add(txtCidade);
             Controls.Add(cbSeguro);
             Controls.Add(mmtbValor_dia);
-            Controls.Add(materialTextBoxEdit3);
-            Controls.Add(materialTextBoxEdit2);
+            Controls.Add(txtAno);
+            Controls.Add(txtPlaca);
             Controls.Add(txtModelo);
+            Controls.Add(txtId);
             Name = "CadastroCarro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Locatora - Cadastro de Carro";
+            Controls.SetChildIndex(txtId, 0);
+            Controls.SetChildIndex(txtModelo, 0);
+            Controls.SetChildIndex(txtPlaca, 0);
+            Controls.SetChildIndex(txtAno, 0);
+            Controls.SetChildIndex(mmtbValor_dia, 0);
+            Controls.SetChildIndex(cbSeguro, 0);
+            Controls.SetChildIndex(txtCidade, 0);
+            Controls.SetChildIndex(cboEstado, 0);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -312,13 +308,12 @@
         #endregion
 
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtModelo;
-        private ReaLTaiizor.Controls.MaterialTextBoxEdit materialTextBoxEdit2;
-        private ReaLTaiizor.Controls.MaterialTextBoxEdit materialTextBoxEdit3;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtPlaca;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtAno;
         private ReaLTaiizor.Controls.MaterialMaskedTextBox mmtbValor_dia;
         private ReaLTaiizor.Controls.MaterialCheckBox cbSeguro;
         private ReaLTaiizor.Controls.MaterialTextBoxEdit txtCidade;
         private ReaLTaiizor.Controls.MaterialComboBox cboEstado;
-        private ReaLTaiizor.Controls.MaterialButton btnCadastrar;
-        private ReaLTaiizor.Controls.MaterialButton btnCancelar;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtId;
     }
 }

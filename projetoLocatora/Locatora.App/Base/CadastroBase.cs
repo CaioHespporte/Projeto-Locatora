@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using ReaLTaiizor.Forms;
+﻿using ReaLTaiizor.Forms;
 using ReaLTaiizor.Controls;
 
 namespace Locatora.App.Base
@@ -29,7 +20,7 @@ namespace Locatora.App.Base
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(@"Deseja realmente cancelar?", @"Locatora", MessageBoxButtons.YesNo,
+            if (MessageBox.Show(@"Deseja realmente cancelar o cadastro e sair?", @"Locatora", MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question)
                 == DialogResult.Yes)
             {
@@ -38,11 +29,27 @@ namespace Locatora.App.Base
             }
         }
 
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            Salvar();
+            Close();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(@"Deseja realmente limpar todos os campos?", @"Locatora", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question)
+                == DialogResult.Yes)
+            {
+                LimpaCampos();
+            }
+        }
+
         #endregion
         protected void LimpaCampos()
         {
             IsAlteracao = false;
-            foreach (var control in Controls)
+            foreach (Control control in Controls)
             {
                 if (control is MaterialTextBoxEdit)
                 {
@@ -55,5 +62,16 @@ namespace Locatora.App.Base
                 }
             }
         }
+
+        protected virtual void Salvar()
+        {
+
+        }
+
+        protected virtual void Deletar()
+        {
+
+        }
+
     }
 }

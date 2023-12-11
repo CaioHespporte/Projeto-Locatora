@@ -25,8 +25,8 @@ namespace Locatora.Service.Validators
                 .NotNull().WithMessage("Por favor informe o RG.");
 
             RuleFor(c => c.CPF)
-                .NotEmpty().WithMessage("Por favor informe a CPF.")
-                .NotNull().WithMessage("Por favor informe a CPF.");
+                .NotEmpty().WithMessage("Por favor informe o CPF.")
+                .NotNull().WithMessage("Por favor informe o CPF.");
 
             RuleFor(c => c.Telefone)
                 .NotEmpty().WithMessage("Por favor informe um número de telefone.")

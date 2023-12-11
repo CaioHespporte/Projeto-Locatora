@@ -92,6 +92,7 @@
             btnSair.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnSair.UseAccentColor = false;
             btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += btnSair_Click;
             // 
             // groupBox1
             // 
@@ -146,6 +147,7 @@
             btnProcurarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnProcurarCarro.UseAccentColor = false;
             btnProcurarCarro.UseVisualStyleBackColor = true;
+            btnProcurarCarro.Click += btnProcurarCarro_Click;
             // 
             // btnExibirReservas
             // 
@@ -172,6 +174,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.locatora;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(471, 450);
             Controls.Add(mlblNome);
             Controls.Add(materialLabel1);
@@ -180,6 +184,7 @@
             IsMdiContainer = true;
             Name = "FormPrincipal";
             Text = "Locatora - Tela Inicial";
+            WindowState = FormWindowState.Maximized;
             FormClosing += FormPrincipal_FormClosing;
             groupBox2.ResumeLayout(false);
             groupBox1.ResumeLayout(false);

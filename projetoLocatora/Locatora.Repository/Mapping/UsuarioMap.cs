@@ -36,7 +36,7 @@ namespace Locatora.Repository.Mapping
 
             builder.Property(prop => prop.CPF)
                 .IsRequired()
-                .HasColumnType("int(11)");
+                .HasColumnType("varchar(11)");
 
             builder.Property(prop => prop.DataCadastro)
                 .HasDefaultValue(DateTime.Now);

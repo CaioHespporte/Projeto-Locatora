@@ -14,6 +14,7 @@ namespace Locatora.Service.Services
             _baseRepository.AttachObject(obj);
         }
 
+
         public BaseService(IBaseRepository<TEntity> baseRepository, IMapper mapper)
         {
             _baseRepository = baseRepository;
@@ -86,6 +87,13 @@ namespace Locatora.Service.Services
             validator.ValidateAndThrow(obj);
         }
 
+
+        /*public IEnumerable<TOutputModel> GetAll<TOutputModel>() where TOutputModel : class
+        {
+            var entities = _baseRepository.Select();
+            var outputModels = entities.Select(s => _mapper.Map<TOutputModel>(s));
+            return outputModels;
+        } // método pra selecionar tudo no banco*/
 
     }
 }
