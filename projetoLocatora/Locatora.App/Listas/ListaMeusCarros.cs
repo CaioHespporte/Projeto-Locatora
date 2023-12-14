@@ -74,7 +74,7 @@ namespace Locatora.App.Listas
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, @"IFSP Store", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message, @"Locatora", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

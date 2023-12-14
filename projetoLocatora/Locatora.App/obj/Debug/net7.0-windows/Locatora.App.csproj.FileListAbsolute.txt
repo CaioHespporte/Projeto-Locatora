@@ -200,3 +200,4 @@ C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Proje
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.App\obj\Debug\net7.0-windows\Locatora.App.pdb
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.App\obj\Debug\net7.0-windows\Locatora.App.genruntimeconfig.cache
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.App\obj\Debug\net7.0-windows\ref\Locatora.App.dll
+C:\Users\caioh\Desktop\Programação Orientada a Eventos\Projeto-Locatora\projetoLocatora\Locatora.App\obj\Debug\net7.0-windows\Locatora.App.Listas.ListaMeusCarros.resources

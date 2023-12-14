@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj": {}
+    "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj": {
+    "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj",
         "projectName": "Locatora.Domain",
-        "projectPath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj",
-        "packagesPath": "C:\\Users\\Caio H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\obj\\",
+        "projectPath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj",
+        "packagesPath": "C:\\Users\\caioh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Caio H\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\caioh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,24 +65,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj": {
+    "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
+        "projectUniqueName": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
         "projectName": "Locatora.Service",
-        "projectPath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
-        "packagesPath": "C:\\Users\\Caio H\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Service\\obj\\",
+        "projectPath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\Locatora.Service.csproj",
+        "packagesPath": "C:\\Users\\caioh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Caio H\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\caioh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,8 +97,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj": {
-                "projectPath": "C:\\Users\\Caio H\\Desktop\\Programação Orientada A Eventos\\Projeto Locatora\\Projeto-Locatora\\projetoLocatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj"
+              "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj": {
+                "projectPath": "C:\\Users\\caioh\\Desktop\\Programação Orientada a Eventos\\Projeto-Locatora\\projetoLocatora\\Locatora.Domain\\Locatora.Domain.csproj"
               }
             }
           }
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
