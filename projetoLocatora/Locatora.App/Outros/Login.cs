@@ -21,8 +21,8 @@ namespace Locatora.App.Outros
             _usuarioService = usuarioService;
             InitializeComponent();
 #if DEBUG
-            txtEmail.Text = @"teste";
-            txtSenha.Text = @"teste";
+            txtEmail.Text = @"admin";
+            txtSenha.Text = @"admin";
 #endif
         }
 
@@ -30,7 +30,7 @@ namespace Locatora.App.Outros
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var usuario = ObterUsuario(txtEmail.Text, txtSenha.Text);
-
+            
             if (usuario == null)
             {
                 MessageBox.Show("Usuário e/ou senha inválido(s)!", "Locatora", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -40,7 +40,7 @@ namespace Locatora.App.Outros
             {
                 usuario.DataCadastro = DateTime.Now;
                 usuario = _usuarioService.Update<Usuario, Usuario, UsuarioValidator>(usuario);
-                FormPrincipal.Usuario = usuario;
+                FormPrincipal.usuario = usuario;
                 DialogResult = DialogResult.OK;
                 Close();
             }

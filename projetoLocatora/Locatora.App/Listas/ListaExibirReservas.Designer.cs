@@ -28,141 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listViewProcurarCarro = new ListView();
-            colunaAndamento = new ColumnHeader();
-            colunaNomeDono = new ColumnHeader();
-            colunaDataInicio = new ColumnHeader();
-            colunaDataFinal = new ColumnHeader();
-            colunaValorTotal = new ColumnHeader();
-            btnVoltar = new ReaLTaiizor.Controls.MaterialButton();
-            btnExcluir = new ReaLTaiizor.Controls.MaterialButton();
-            btnAlterar = new ReaLTaiizor.Controls.MaterialButton();
-            SuspendLayout();
-            // 
-            // listViewProcurarCarro
-            // 
-            listViewProcurarCarro.Columns.AddRange(new ColumnHeader[] { colunaAndamento, colunaNomeDono, colunaDataInicio, colunaDataFinal, colunaValorTotal });
-            listViewProcurarCarro.GridLines = true;
-            listViewProcurarCarro.Location = new Point(31, 87);
-            listViewProcurarCarro.MultiSelect = false;
-            listViewProcurarCarro.Name = "listViewProcurarCarro";
-            listViewProcurarCarro.Size = new Size(658, 285);
-            listViewProcurarCarro.TabIndex = 1;
-            listViewProcurarCarro.UseCompatibleStateImageBehavior = false;
-            listViewProcurarCarro.View = View.Details;
-            // 
-            // colunaAndamento
-            // 
-            colunaAndamento.Text = "Andamento";
-            colunaAndamento.Width = 140;
-            // 
-            // colunaNomeDono
-            // 
-            colunaNomeDono.Text = "Nome do Locator";
-            colunaNomeDono.Width = 174;
-            // 
-            // colunaDataInicio
-            // 
-            colunaDataInicio.Text = "Data de Início";
-            colunaDataInicio.Width = 120;
-            // 
-            // colunaDataFinal
-            // 
-            colunaDataFinal.Text = "Data Final";
-            colunaDataFinal.Width = 120;
-            // 
-            // colunaValorTotal
-            // 
-            colunaValorTotal.Text = "Valor Total";
-            colunaValorTotal.Width = 100;
+            this.btnVoltar = new ReaLTaiizor.Controls.MaterialButton();
+            this.btnExcluir = new ReaLTaiizor.Controls.MaterialButton();
+            this.dataGridViewReserva = new System.Windows.Forms.DataGridView();
+            this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCarro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnProprietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnDataInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnDataFinal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnAndamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdCarro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReserva)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnVoltar
             // 
-            btnVoltar.AutoSize = false;
-            btnVoltar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnVoltar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnVoltar.Depth = 0;
-            btnVoltar.HighEmphasis = true;
-            btnVoltar.Icon = null;
-            btnVoltar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnVoltar.Location = new Point(55, 394);
-            btnVoltar.Margin = new Padding(4, 6, 4, 6);
-            btnVoltar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.NoAccentTextColor = Color.Empty;
-            btnVoltar.Size = new Size(174, 36);
-            btnVoltar.TabIndex = 2;
-            btnVoltar.Text = "Voltar ao início";
-            btnVoltar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnVoltar.UseAccentColor = false;
-            btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.AutoSize = false;
+            this.btnVoltar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnVoltar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnVoltar.Depth = 0;
+            this.btnVoltar.HighEmphasis = true;
+            this.btnVoltar.Icon = null;
+            this.btnVoltar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnVoltar.Location = new System.Drawing.Point(55, 394);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnVoltar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnVoltar.Size = new System.Drawing.Size(174, 36);
+            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.Text = "Voltar ao início";
+            this.btnVoltar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnVoltar.UseAccentColor = false;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnExcluir
             // 
-            btnExcluir.AutoSize = false;
-            btnExcluir.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnExcluir.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnExcluir.Depth = 0;
-            btnExcluir.HighEmphasis = true;
-            btnExcluir.Icon = null;
-            btnExcluir.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnExcluir.Location = new Point(493, 394);
-            btnExcluir.Margin = new Padding(4, 6, 4, 6);
-            btnExcluir.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.NoAccentTextColor = Color.Empty;
-            btnExcluir.Size = new Size(174, 36);
-            btnExcluir.TabIndex = 3;
-            btnExcluir.Text = "Excluir Reserva";
-            btnExcluir.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnExcluir.UseAccentColor = false;
-            btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.AutoSize = false;
+            this.btnExcluir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnExcluir.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnExcluir.Depth = 0;
+            this.btnExcluir.HighEmphasis = true;
+            this.btnExcluir.Icon = null;
+            this.btnExcluir.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnExcluir.Location = new System.Drawing.Point(493, 394);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnExcluir.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnExcluir.Size = new System.Drawing.Size(174, 36);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.Text = "Excluir Reserva";
+            this.btnExcluir.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnExcluir.UseAccentColor = false;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // btnAlterar
+            // dataGridViewReserva
             // 
-            btnAlterar.AutoSize = false;
-            btnAlterar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAlterar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnAlterar.Depth = 0;
-            btnAlterar.HighEmphasis = true;
-            btnAlterar.Icon = null;
-            btnAlterar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnAlterar.Location = new Point(274, 394);
-            btnAlterar.Margin = new Padding(4, 6, 4, 6);
-            btnAlterar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnAlterar.Name = "btnAlterar";
-            btnAlterar.NoAccentTextColor = Color.Empty;
-            btnAlterar.Size = new Size(174, 36);
-            btnAlterar.TabIndex = 4;
-            btnAlterar.Text = "Alterar Reserva";
-            btnAlterar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnAlterar.UseAccentColor = false;
-            btnAlterar.UseVisualStyleBackColor = true;
+            this.dataGridViewReserva.AllowUserToAddRows = false;
+            this.dataGridViewReserva.AllowUserToDeleteRows = false;
+            this.dataGridViewReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReserva.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnId,
+            this.clnCarro,
+            this.clnProprietario,
+            this.clnDataInicio,
+            this.clnDataFinal,
+            this.clnValorTotal,
+            this.clnAndamento,
+            this.clnUsuario,
+            this.clnIdUsuario,
+            this.clnIdCarro});
+            this.dataGridViewReserva.Location = new System.Drawing.Point(31, 96);
+            this.dataGridViewReserva.Name = "dataGridViewReserva";
+            this.dataGridViewReserva.ReadOnly = true;
+            this.dataGridViewReserva.RowTemplate.Height = 25;
+            this.dataGridViewReserva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewReserva.Size = new System.Drawing.Size(659, 249);
+            this.dataGridViewReserva.TabIndex = 5;
+            // 
+            // clnId
+            // 
+            this.clnId.DataPropertyName = "Id";
+            this.clnId.HeaderText = "Id";
+            this.clnId.Name = "clnId";
+            this.clnId.ReadOnly = true;
+            this.clnId.Visible = false;
+            // 
+            // clnCarro
+            // 
+            this.clnCarro.DataPropertyName = "Carro";
+            this.clnCarro.HeaderText = "Carro";
+            this.clnCarro.Name = "clnCarro";
+            this.clnCarro.ReadOnly = true;
+            this.clnCarro.Width = 150;
+            // 
+            // clnProprietario
+            // 
+            this.clnProprietario.DataPropertyName = "Proprietario";
+            this.clnProprietario.HeaderText = "Nome do Proprietario";
+            this.clnProprietario.Name = "clnProprietario";
+            this.clnProprietario.ReadOnly = true;
+            this.clnProprietario.Width = 200;
+            // 
+            // clnDataInicio
+            // 
+            this.clnDataInicio.DataPropertyName = "Data_Inicio";
+            this.clnDataInicio.HeaderText = "Data de Inicio";
+            this.clnDataInicio.Name = "clnDataInicio";
+            this.clnDataInicio.ReadOnly = true;
+            this.clnDataInicio.Width = 150;
+            // 
+            // clnDataFinal
+            // 
+            this.clnDataFinal.DataPropertyName = "Data_Fim";
+            this.clnDataFinal.HeaderText = "Data Final";
+            this.clnDataFinal.Name = "clnDataFinal";
+            this.clnDataFinal.ReadOnly = true;
+            this.clnDataFinal.Width = 150;
+            // 
+            // clnValorTotal
+            // 
+            this.clnValorTotal.DataPropertyName = "Valor_total";
+            this.clnValorTotal.HeaderText = "Valor Total";
+            this.clnValorTotal.Name = "clnValorTotal";
+            this.clnValorTotal.ReadOnly = true;
+            // 
+            // clnAndamento
+            // 
+            this.clnAndamento.DataPropertyName = "Andamento";
+            this.clnAndamento.HeaderText = "Andamento";
+            this.clnAndamento.Name = "clnAndamento";
+            this.clnAndamento.ReadOnly = true;
+            this.clnAndamento.Visible = false;
+            // 
+            // clnUsuario
+            // 
+            this.clnUsuario.DataPropertyName = "Usuario";
+            this.clnUsuario.HeaderText = "Usuario";
+            this.clnUsuario.Name = "clnUsuario";
+            this.clnUsuario.ReadOnly = true;
+            this.clnUsuario.Visible = false;
+            // 
+            // clnIdUsuario
+            // 
+            this.clnIdUsuario.DataPropertyName = "idUsuario";
+            this.clnIdUsuario.HeaderText = "IdUsuario";
+            this.clnIdUsuario.Name = "clnIdUsuario";
+            this.clnIdUsuario.ReadOnly = true;
+            this.clnIdUsuario.Visible = false;
+            // 
+            // clnIdCarro
+            // 
+            this.clnIdCarro.DataPropertyName = "IdCarro";
+            this.clnIdCarro.HeaderText = "IdCarro";
+            this.clnIdCarro.Name = "clnIdCarro";
+            this.clnIdCarro.ReadOnly = true;
+            this.clnIdCarro.Visible = false;
             // 
             // ListaExibirReservas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(733, 450);
-            Controls.Add(btnAlterar);
-            Controls.Add(btnExcluir);
-            Controls.Add(btnVoltar);
-            Controls.Add(listViewProcurarCarro);
-            Name = "ListaExibirReservas";
-            Text = "Locatora - Lista de Reservas";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(733, 450);
+            this.Controls.Add(this.dataGridViewReserva);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnVoltar);
+            this.Name = "ListaExibirReservas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Locatora - Lista de Reservas";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReserva)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
-
-        private ListView listViewProcurarCarro;
-        private ColumnHeader colunaAndamento;
-        private ColumnHeader colunaNomeDono;
-        private ColumnHeader colunaDataInicio;
-        private ColumnHeader colunaDataFinal;
-        private ColumnHeader colunaValorTotal;
         private ReaLTaiizor.Controls.MaterialButton btnVoltar;
         private ReaLTaiizor.Controls.MaterialButton btnExcluir;
-        private ReaLTaiizor.Controls.MaterialButton btnAlterar;
+        private DataGridView dataGridViewReserva;
+        private DataGridViewTextBoxColumn clnId;
+        private DataGridViewTextBoxColumn clnCarro;
+        private DataGridViewTextBoxColumn clnProprietario;
+        private DataGridViewTextBoxColumn clnDataInicio;
+        private DataGridViewTextBoxColumn clnDataFinal;
+        private DataGridViewTextBoxColumn clnValorTotal;
+        private DataGridViewTextBoxColumn clnAndamento;
+        private DataGridViewTextBoxColumn clnUsuario;
+        private DataGridViewTextBoxColumn clnIdUsuario;
+        private DataGridViewTextBoxColumn clnIdCarro;
     }
 }

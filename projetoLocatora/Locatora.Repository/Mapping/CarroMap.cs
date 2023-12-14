@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Locatora.Repository.Mapping
 {
-    public class Cadastrar_carroMap : IEntityTypeConfiguration<Cadastrar_carro>
+    public class CarroMap : IEntityTypeConfiguration<Carro>
     {
-        public void Configure(EntityTypeBuilder<Cadastrar_carro> builder)
+        public void Configure(EntityTypeBuilder<Carro> builder)
         {
-            builder.ToTable("Cadastrar_carro");
+            builder.ToTable("Carro");
 
             builder.HasKey(prop => prop.Id);
 
@@ -20,14 +20,6 @@ namespace Locatora.Repository.Mapping
                 .IsRequired()
                 .HasColumnType("varchar(8)");
 
-            builder.Property(prop => prop.Cidade)
-                .IsRequired()
-                .HasColumnType("varchar(30)");
-
-            builder.Property(prop => prop.Estado)
-                .IsRequired()
-                .HasColumnType("varchar(2)");
-
             builder.Property(prop => prop.Ano)
                 .IsRequired()
                 .HasColumnType("int(4)");
@@ -38,7 +30,13 @@ namespace Locatora.Repository.Mapping
 
             builder.Property(prop => prop.Seguro);
 
+            builder.Property(prop => prop.Alugado);
+
             builder.HasOne(prop => prop.Usuario);
+
+            builder.HasOne(prop => prop.Cidade);
+
+            builder.HasOne(prop => prop.Estado);
         }
     }
 }

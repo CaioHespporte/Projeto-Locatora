@@ -2,16 +2,14 @@
 
 namespace Locatora.Domain.Entities
 {
-    public class Cadastrar_carro : BaseEntity<int>
+    public class Carro : BaseEntity<int>
     {
-        public Cadastrar_carro()
+        public Carro()
         {
 
         }
 
-        public int UsuarioId { get; set; }
-
-        public Cadastrar_carro(int id, string? modelo, string? placa, int? ano, float? valor_dia, bool? seguro, string? cidade, string? estado, Usuario? usuario) : base(id)
+        public Carro(int id, string? modelo, string? placa, int? ano, float? valor_dia, bool? seguro, bool? alugado, Cidade? cidade, Estado? estado, Usuario? usuario) : base(id)
         {
             Modelo = modelo;
             Placa = placa;
@@ -21,7 +19,7 @@ namespace Locatora.Domain.Entities
             Usuario = usuario;
             Cidade = cidade;
             Estado = estado;
-
+            Alugado = alugado;
         }
 
         public string? Modelo { get; set; }
@@ -29,9 +27,10 @@ namespace Locatora.Domain.Entities
         public int? Ano { get; set; }
         public float? Valor_dia { get; set; }
         public bool? Seguro { get; set; }
-        public string? Cidade { get; set; }
-        public string? Estado { get; set; }
 
+        public bool? Alugado { get; set; }
+        public Cidade? Cidade { get; set; }
+        public Estado? Estado { get; set; }
         public Usuario? Usuario { get; set; }
     }
 }

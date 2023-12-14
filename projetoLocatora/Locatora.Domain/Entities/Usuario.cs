@@ -29,6 +29,6 @@ namespace Locatora.Domain.Entities
         public string? CPF { get; set; }
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
-
+        public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
     }
 }

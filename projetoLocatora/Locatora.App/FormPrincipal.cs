@@ -14,7 +14,7 @@ namespace Locatora.App
     {
         private readonly IBaseService<Usuario> _usuarioService;
 
-        public static Usuario Usuario { get; set; }
+        public static Usuario usuario { get; set; }
         bool logado = false;
 
         public FormPrincipal(IBaseService<Usuario> usuarioService)
@@ -36,7 +36,7 @@ namespace Locatora.App
                 }
                 else
                 {
-                    mlblNome.Text = $"{Usuario.Nome}";
+                    mlblNome.Text = $"{usuario.Nome}";
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace Locatora.App
 
         private void btnCadastrarCarro_Click(object sender, EventArgs e)
         {
-            CadastroCarro.Usuario = Usuario;
+            CadastroCarro.usuario = usuario;
             ExibeFormulario<CadastroCarro>();
         }
 
@@ -62,7 +62,7 @@ namespace Locatora.App
 
         private void btnProcurarCarro_Click(object sender, EventArgs e)
         {
-            ListaProcurarCarro.Usuario = Usuario;
+            ListaProcurarCarro.usuario = usuario;
             ExibeFormulario<ListaProcurarCarro>();
         }
 
@@ -76,6 +76,7 @@ namespace Locatora.App
                 btnCadastrarCarro.Enabled = false;
                 btnProcurarCarro.Enabled = false;
                 btnExibirReservas.Enabled = false;
+                btnMeusCarros.Enabled = false;
                 btnSair.Enabled = false;
                 cad.MdiParent = this;
                 cad.Show();
@@ -84,10 +85,22 @@ namespace Locatora.App
                     btnCadastrarCarro.Enabled = true;
                     btnProcurarCarro.Enabled = true;
                     btnExibirReservas.Enabled = true;
+                    btnMeusCarros.Enabled = true;
                     btnSair.Enabled = true;
                 };
             }
         }
 
+        private void btnExibirReservas_Click(object sender, EventArgs e)
+        {
+            ListaExibirReservas.usuario = usuario;
+            ExibeFormulario<ListaExibirReservas>();
+        }
+
+        private void btnMeusCarros_Click(object sender, EventArgs e)
+        {
+            ListaMeusCarros.usuario = usuario;
+            ExibeFormulario<ListaMeusCarros>();
+        }
     }
 }

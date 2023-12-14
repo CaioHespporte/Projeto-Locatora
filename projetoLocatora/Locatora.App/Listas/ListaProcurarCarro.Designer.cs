@@ -28,212 +28,241 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            btnReservar = new ReaLTaiizor.Controls.MaterialButton();
-            btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
-            dataGridViewProcurar = new DataGridView();
-            clnId = new DataGridViewTextBoxColumn();
-            clnModelo = new DataGridViewTextBoxColumn();
-            clnPlaca = new DataGridViewTextBoxColumn();
-            clnAno = new DataGridViewTextBoxColumn();
-            clnValor_dia = new DataGridViewTextBoxColumn();
-            clnSeguro = new DataGridViewTextBoxColumn();
-            clnCidade = new DataGridViewTextBoxColumn();
-            clnEstado = new DataGridViewTextBoxColumn();
-            clnUsuarioId = new DataGridViewTextBoxColumn();
-            cadastrarcarroBindingSource = new BindingSource(components);
-            txtTeste = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewProcurar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)cadastrarcarroBindingSource).BeginInit();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.btnReservar = new ReaLTaiizor.Controls.MaterialButton();
+            this.btnCancelar = new ReaLTaiizor.Controls.MaterialButton();
+            this.dataGridViewProcurar = new System.Windows.Forms.DataGridView();
+            this.clnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnPlaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnAno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnValor_dia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnSeguro = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.clnAlugado = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.clnUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdCidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clnIdEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadastrarcarroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastrarcarroBindingSource)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnReservar
             // 
-            btnReservar.AutoSize = false;
-            btnReservar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnReservar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnReservar.Depth = 0;
-            btnReservar.HighEmphasis = true;
-            btnReservar.Icon = null;
-            btnReservar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnReservar.Location = new Point(455, 394);
-            btnReservar.Margin = new Padding(4, 6, 4, 6);
-            btnReservar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnReservar.Name = "btnReservar";
-            btnReservar.NoAccentTextColor = Color.Empty;
-            btnReservar.Size = new Size(216, 36);
-            btnReservar.TabIndex = 1;
-            btnReservar.Text = "Reservar Carro";
-            btnReservar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnReservar.UseAccentColor = false;
-            btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.AutoSize = false;
+            this.btnReservar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReservar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReservar.Depth = 0;
+            this.btnReservar.HighEmphasis = true;
+            this.btnReservar.Icon = null;
+            this.btnReservar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnReservar.Location = new System.Drawing.Point(516, 394);
+            this.btnReservar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnReservar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReservar.Size = new System.Drawing.Size(216, 36);
+            this.btnReservar.TabIndex = 1;
+            this.btnReservar.Text = "Reservar Carro";
+            this.btnReservar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReservar.UseAccentColor = false;
+            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
             // 
             // btnCancelar
             // 
-            btnCancelar.AutoSize = false;
-            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCancelar.Depth = 0;
-            btnCancelar.HighEmphasis = true;
-            btnCancelar.Icon = null;
-            btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCancelar.Location = new Point(142, 394);
-            btnCancelar.Margin = new Padding(4, 6, 4, 6);
-            btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.NoAccentTextColor = Color.Empty;
-            btnCancelar.Size = new Size(216, 36);
-            btnCancelar.TabIndex = 2;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCancelar.UseAccentColor = false;
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            this.btnCancelar.AutoSize = false;
+            this.btnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCancelar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCancelar.Depth = 0;
+            this.btnCancelar.HighEmphasis = true;
+            this.btnCancelar.Icon = null;
+            this.btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnCancelar.Location = new System.Drawing.Point(29, 394);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnCancelar.Size = new System.Drawing.Size(137, 36);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCancelar.UseAccentColor = false;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // dataGridViewProcurar
             // 
-            dataGridViewProcurar.AllowUserToAddRows = false;
-            dataGridViewProcurar.AllowUserToDeleteRows = false;
-            dataGridViewProcurar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridViewProcurar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewProcurar.Columns.AddRange(new DataGridViewColumn[] { clnId, clnModelo, clnPlaca, clnAno, clnValor_dia, clnSeguro, clnCidade, clnEstado, clnUsuarioId });
-            dataGridViewProcurar.Location = new Point(29, 81);
-            dataGridViewProcurar.Name = "dataGridViewProcurar";
-            dataGridViewProcurar.ReadOnly = true;
-            dataGridViewProcurar.RowTemplate.Height = 25;
-            dataGridViewProcurar.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewProcurar.Size = new Size(772, 288);
-            dataGridViewProcurar.TabIndex = 3;
+            this.dataGridViewProcurar.AllowUserToAddRows = false;
+            this.dataGridViewProcurar.AllowUserToDeleteRows = false;
+            this.dataGridViewProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewProcurar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProcurar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clnId,
+            this.clnModelo,
+            this.clnPlaca,
+            this.clnAno,
+            this.clnValor_dia,
+            this.clnSeguro,
+            this.clnAlugado,
+            this.clnUsuario,
+            this.clnCidade,
+            this.clnEstado,
+            this.clnIdUsuario,
+            this.clnIdCidade,
+            this.clnIdEstado});
+            this.dataGridViewProcurar.Location = new System.Drawing.Point(29, 81);
+            this.dataGridViewProcurar.Name = "dataGridViewProcurar";
+            this.dataGridViewProcurar.ReadOnly = true;
+            this.dataGridViewProcurar.RowTemplate.Height = 25;
+            this.dataGridViewProcurar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewProcurar.Size = new System.Drawing.Size(703, 288);
+            this.dataGridViewProcurar.TabIndex = 3;
             // 
             // clnId
             // 
-            clnId.DataPropertyName = "Id";
-            clnId.HeaderText = "Id";
-            clnId.Name = "clnId";
-            clnId.ReadOnly = true;
+            this.clnId.DataPropertyName = "Id";
+            this.clnId.HeaderText = "Id";
+            this.clnId.Name = "clnId";
+            this.clnId.ReadOnly = true;
+            this.clnId.Visible = false;
+            this.clnId.Width = 30;
             // 
             // clnModelo
             // 
-            clnModelo.DataPropertyName = "Modelo";
-            clnModelo.HeaderText = "Modelo";
-            clnModelo.Name = "clnModelo";
-            clnModelo.ReadOnly = true;
+            this.clnModelo.DataPropertyName = "Modelo";
+            this.clnModelo.HeaderText = "Modelo";
+            this.clnModelo.Name = "clnModelo";
+            this.clnModelo.ReadOnly = true;
             // 
             // clnPlaca
             // 
-            clnPlaca.DataPropertyName = "Placa";
-            clnPlaca.HeaderText = "Placa";
-            clnPlaca.Name = "clnPlaca";
-            clnPlaca.ReadOnly = true;
+            this.clnPlaca.DataPropertyName = "Placa";
+            this.clnPlaca.HeaderText = "Placa";
+            this.clnPlaca.Name = "clnPlaca";
+            this.clnPlaca.ReadOnly = true;
             // 
             // clnAno
             // 
-            clnAno.DataPropertyName = "Ano";
-            clnAno.HeaderText = "Ano";
-            clnAno.Name = "clnAno";
-            clnAno.ReadOnly = true;
+            this.clnAno.DataPropertyName = "Ano";
+            this.clnAno.HeaderText = "Ano";
+            this.clnAno.Name = "clnAno";
+            this.clnAno.ReadOnly = true;
             // 
             // clnValor_dia
             // 
-            clnValor_dia.DataPropertyName = "Valor_dia";
-            clnValor_dia.HeaderText = "Valor Diário";
-            clnValor_dia.Name = "clnValor_dia";
-            clnValor_dia.ReadOnly = true;
+            this.clnValor_dia.DataPropertyName = "Valor_dia";
+            this.clnValor_dia.HeaderText = "Valor Diário";
+            this.clnValor_dia.Name = "clnValor_dia";
+            this.clnValor_dia.ReadOnly = true;
             // 
             // clnSeguro
             // 
-            clnSeguro.DataPropertyName = "Seguro";
-            clnSeguro.HeaderText = "Seguro?";
-            clnSeguro.Name = "clnSeguro";
-            clnSeguro.ReadOnly = true;
+            this.clnSeguro.DataPropertyName = "Seguro";
+            this.clnSeguro.HeaderText = "Seguro?";
+            this.clnSeguro.Name = "clnSeguro";
+            this.clnSeguro.ReadOnly = true;
+            this.clnSeguro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clnSeguro.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clnSeguro.Width = 60;
+            // 
+            // clnAlugado
+            // 
+            this.clnAlugado.DataPropertyName = "Alugado";
+            this.clnAlugado.HeaderText = "Alugado";
+            this.clnAlugado.Name = "clnAlugado";
+            this.clnAlugado.ReadOnly = true;
+            this.clnAlugado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clnAlugado.Visible = false;
+            // 
+            // clnUsuario
+            // 
+            this.clnUsuario.DataPropertyName = "Usuario";
+            this.clnUsuario.HeaderText = "Proprietário";
+            this.clnUsuario.Name = "clnUsuario";
+            this.clnUsuario.ReadOnly = true;
             // 
             // clnCidade
             // 
-            clnCidade.DataPropertyName = "Cidade";
-            clnCidade.HeaderText = "Cidade";
-            clnCidade.Name = "clnCidade";
-            clnCidade.ReadOnly = true;
+            this.clnCidade.DataPropertyName = "Cidade";
+            this.clnCidade.HeaderText = "Cidade";
+            this.clnCidade.Name = "clnCidade";
+            this.clnCidade.ReadOnly = true;
             // 
             // clnEstado
             // 
-            clnEstado.DataPropertyName = "Estado";
-            clnEstado.HeaderText = "Estado";
-            clnEstado.Name = "clnEstado";
-            clnEstado.ReadOnly = true;
+            this.clnEstado.DataPropertyName = "Estado";
+            this.clnEstado.HeaderText = "Estado";
+            this.clnEstado.Name = "clnEstado";
+            this.clnEstado.ReadOnly = true;
             // 
-            // clnUsuarioId
+            // clnIdUsuario
             // 
-            clnUsuarioId.DataPropertyName = "UsuarioId";
-            clnUsuarioId.HeaderText = "UsuarioId";
-            clnUsuarioId.Name = "clnUsuarioId";
-            clnUsuarioId.ReadOnly = true;
+            this.clnIdUsuario.DataPropertyName = "idUsuario";
+            this.clnIdUsuario.HeaderText = "idUsuario";
+            this.clnIdUsuario.Name = "clnIdUsuario";
+            this.clnIdUsuario.ReadOnly = true;
+            this.clnIdUsuario.Visible = false;
+            // 
+            // clnIdCidade
+            // 
+            this.clnIdCidade.DataPropertyName = "IdCidade";
+            this.clnIdCidade.HeaderText = "idCidade";
+            this.clnIdCidade.Name = "clnIdCidade";
+            this.clnIdCidade.ReadOnly = true;
+            this.clnIdCidade.Visible = false;
+            // 
+            // clnIdEstado
+            // 
+            this.clnIdEstado.DataPropertyName = "IdEstado";
+            this.clnIdEstado.HeaderText = "idEstado";
+            this.clnIdEstado.Name = "clnIdEstado";
+            this.clnIdEstado.ReadOnly = true;
+            this.clnIdEstado.Visible = false;
             // 
             // cadastrarcarroBindingSource
             // 
-            cadastrarcarroBindingSource.DataSource = typeof(Domain.Entities.Cadastrar_carro);
-            // 
-            // txtTeste
-            // 
-            txtTeste.AnimateReadOnly = false;
-            txtTeste.AutoCompleteMode = AutoCompleteMode.None;
-            txtTeste.AutoCompleteSource = AutoCompleteSource.None;
-            txtTeste.BackgroundImageLayout = ImageLayout.None;
-            txtTeste.CharacterCasing = CharacterCasing.Normal;
-            txtTeste.Depth = 0;
-            txtTeste.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txtTeste.HideSelection = true;
-            txtTeste.Hint = "test";
-            txtTeste.LeadingIcon = null;
-            txtTeste.Location = new Point(722, 394);
-            txtTeste.MaxLength = 32767;
-            txtTeste.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
-            txtTeste.Name = "txtTeste";
-            txtTeste.PasswordChar = '\0';
-            txtTeste.PrefixSuffixText = null;
-            txtTeste.ReadOnly = false;
-            txtTeste.RightToLeft = RightToLeft.No;
-            txtTeste.SelectedText = "";
-            txtTeste.SelectionLength = 0;
-            txtTeste.SelectionStart = 0;
-            txtTeste.ShortcutsEnabled = true;
-            txtTeste.Size = new Size(79, 48);
-            txtTeste.TabIndex = 4;
-            txtTeste.TabStop = false;
-            txtTeste.TextAlign = HorizontalAlignment.Left;
-            txtTeste.TrailingIcon = null;
-            txtTeste.UseSystemPasswordChar = false;
+            this.cadastrarcarroBindingSource.DataSource = typeof(Locatora.Domain.Entities.Carro);
             // 
             // ListaProcurarCarro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(833, 450);
-            Controls.Add(txtTeste);
-            Controls.Add(dataGridViewProcurar);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnReservar);
-            Name = "ListaProcurarCarro";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Locatora - Procurar Carro";
-            ((System.ComponentModel.ISupportInitialize)dataGridViewProcurar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)cadastrarcarroBindingSource).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(755, 450);
+            this.Controls.Add(this.dataGridViewProcurar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnReservar);
+            this.Name = "ListaProcurarCarro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Locatora - Procurar Carro";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastrarcarroBindingSource)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
         private ReaLTaiizor.Controls.MaterialButton btnReservar;
         private ReaLTaiizor.Controls.MaterialButton btnCancelar;
         private DataGridView dataGridViewProcurar;
-        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtTeste;
         private BindingSource cadastrarcarroBindingSource;
         private DataGridViewTextBoxColumn clnId;
         private DataGridViewTextBoxColumn clnModelo;
         private DataGridViewTextBoxColumn clnPlaca;
         private DataGridViewTextBoxColumn clnAno;
         private DataGridViewTextBoxColumn clnValor_dia;
-        private DataGridViewTextBoxColumn clnSeguro;
+        private DataGridViewCheckBoxColumn clnSeguro;
+        private DataGridViewCheckBoxColumn clnAlugado;
+        private DataGridViewTextBoxColumn clnUsuario;
         private DataGridViewTextBoxColumn clnCidade;
         private DataGridViewTextBoxColumn clnEstado;
-        private DataGridViewTextBoxColumn clnUsuarioId;
+        private DataGridViewTextBoxColumn clnIdUsuario;
+        private DataGridViewTextBoxColumn clnIdCidade;
+        private DataGridViewTextBoxColumn clnIdEstado;
     }
 }

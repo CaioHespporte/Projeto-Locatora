@@ -21,7 +21,6 @@ namespace Locatora.Domain.Base
             where TInputModel : class
             where TOutputModel : class;
 
-        //IEnumerable<TOutputModel> GetAll<TOutputModel>() where TOutputModel : class; ///método pra selecionar tudo no banco
 
     }
 }

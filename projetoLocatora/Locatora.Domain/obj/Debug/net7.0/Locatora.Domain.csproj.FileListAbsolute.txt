@@ -22,3 +22,27 @@ C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\proje
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\refint\Locatora.Domain.dll
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.pdb
 C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\ref\Locatora.Domain.dll
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.deps.json
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.dll
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.pdb
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.csproj.AssemblyReference.cache
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.AssemblyInfoInputs.cache
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.AssemblyInfo.cs
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.dll
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\refint\Locatora.Domain.dll
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.pdb
+C:\Users\ricks\source\repos\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\ref\Locatora.Domain.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.deps.json
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\bin\Debug\net7.0\Locatora.Domain.pdb
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.csproj.AssemblyReference.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.AssemblyInfoInputs.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.AssemblyInfo.cs
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\refint\Locatora.Domain.dll
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\Locatora.Domain.pdb
+C:\Users\Caio H\Desktop\Programação Orientada A Eventos\Projeto Locatora\Projeto-Locatora\projetoLocatora\projetoLocatora\Locatora.Domain\obj\Debug\net7.0\ref\Locatora.Domain.dll

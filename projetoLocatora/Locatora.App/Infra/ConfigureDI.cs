@@ -6,6 +6,7 @@ using Locatora.App.Outros;
 using Locatora.Domain.Base;
 using Locatora.Domain.Entities;
 using Locatora.Repository.Context;
+using Locatora.Repository.Mapping;
 using Locatora.Repository.Repository;
 using Locatora.Service.Services;
 using Microsoft.EntityFrameworkCore;
@@ -41,15 +42,17 @@ namespace Locatora.App.Infra
 
             // Repositories
             Services.AddScoped<IBaseRepository<Usuario>, BaseRepository<Usuario>>();
-            Services.AddScoped<IBaseRepository<Cadastrar_carro>, BaseRepository<Cadastrar_carro>>();
+            Services.AddScoped<IBaseRepository<Carro>, BaseRepository<Carro>>();
             Services.AddScoped<IBaseRepository<Reserva>, BaseRepository<Reserva>>();
-            Services.AddScoped<IBaseRepository<Ofertas_reserva>, BaseRepository<Ofertas_reserva>>();
+            Services.AddScoped<IBaseRepository<Cidade>, BaseRepository<Cidade>>();
+            Services.AddScoped<IBaseRepository<Estado>, BaseRepository<Estado>>();
 
             // Services
             Services.AddScoped<IBaseService<Usuario>, BaseService<Usuario>>();
-            Services.AddScoped<IBaseService<Cadastrar_carro>, BaseService<Cadastrar_carro>>();
+            Services.AddScoped<IBaseService<Carro>, BaseService<Carro>>();
             Services.AddScoped<IBaseService<Reserva>, BaseService<Reserva>>();
-            Services.AddScoped<IBaseService<Ofertas_reserva>, BaseService<Ofertas_reserva>>();
+            Services.AddScoped<IBaseService<Estado>, BaseService<Estado>>();
+            Services.AddScoped<IBaseService<Cidade>, BaseService<Cidade>>();
 
             // Formulários
             Services.AddTransient<Login, Login>();
@@ -57,8 +60,10 @@ namespace Locatora.App.Infra
             Services.AddTransient<CadastroCarro, CadastroCarro>();
             Services.AddTransient<ListaExibirReservas, ListaExibirReservas>();
             Services.AddTransient<ListaProcurarCarro, ListaProcurarCarro>();
+            Services.AddTransient<ListaMeusCarros, ListaMeusCarros>();
             Services.AddTransient<ConfirmarReserva, ConfirmarReserva>();
             Services.AddTransient<FormPrincipal, FormPrincipal>();
+
 
             // Mapping
             Services.AddSingleton(new MapperConfiguration(config =>
@@ -68,22 +73,21 @@ namespace Locatora.App.Infra
                 config.CreateMap<Reserva, ReservaModel>()
                     .ForMember(d => d.IdUsuario, d => d.MapFrom(x => x.Usuario!.Id))
                     .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome))
-                    .ForMember(d => d.IdCadastrar_Carro, d => d.MapFrom(x => x.Cadastrar_carro!.Id))
-                    .ForMember(d => d.Cadastrar_carro, d => d.MapFrom(x => x.Cadastrar_carro!.Modelo));
+                    .ForMember(d => d.IdCarro, d => d.MapFrom(x => x.Carro!.Id))
+                    .ForMember(d => d.Carro, d => d.MapFrom(x => x.Carro!.Modelo));
 
-                config.CreateMap<Cadastrar_carro, Cadastrar_carroModel>()
-                    .ForMember(d => d.IdUsuario, d => d.MapFrom(x => x.Usuario!.Id))
-                    .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome));
-
-                config.CreateMap<Oferta, OfertaModel>()
-                    .ForMember(d => d.IdUsuario, d => d.MapFrom(x => x.Usuario!.Id))
-                    .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome));
-
-                config.CreateMap<Ofertas_reserva, Ofertas_reservaModel>()
+                config.CreateMap<Carro, CarroModel>()
                     .ForMember(d => d.IdUsuario, d => d.MapFrom(x => x.Usuario!.Id))
                     .ForMember(d => d.Usuario, d => d.MapFrom(x => x.Usuario!.Nome))
-                    .ForMember(d => d.IdCadastrar_Carro, d => d.MapFrom(x => x.Cadastrar_carro!.Id))
-                    .ForMember(d => d.Cadastrar_carro, d => d.MapFrom(x => x.Cadastrar_carro!.Modelo));
+                    .ForMember(d => d.idCidade, d => d.MapFrom(x => x.Cidade!.Id))
+                    .ForMember(d => d.Cidade, d => d.MapFrom(x => x.Cidade!.Nome))
+                    .ForMember(d => d.idEstado, d => d.MapFrom(x => x.Estado!.Id))
+                    .ForMember(d => d.Estado, d => d.MapFrom(x => x.Estado!.Nome));
+
+                config.CreateMap<Cidade, CidadeModel>()
+                    .ForMember(d => d.IdEstado, d => d.MapFrom(x => x.Estado!.Id))
+                    .ForMember(d => d.Estado, d => d.MapFrom(x => x.Estado!.Nome));
+
 
             }).CreateMapper());
 

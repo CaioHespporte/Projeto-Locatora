@@ -16,6 +16,9 @@
     <Compile Update="Listas\ListaExibirReservas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Listas\ListaMeusCarros.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Listas\ListaProcurarCarro.cs">
       <SubType>Form</SubType>
     </Compile>

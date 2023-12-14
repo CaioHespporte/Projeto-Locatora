@@ -28,168 +28,193 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mlblNome = new ReaLTaiizor.Controls.MaterialLabel();
-            materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
-            groupBox2 = new GroupBox();
-            btnSair = new ReaLTaiizor.Controls.MaterialButton();
-            groupBox1 = new GroupBox();
-            btnCadastrarCarro = new ReaLTaiizor.Controls.MaterialButton();
-            btnProcurarCarro = new ReaLTaiizor.Controls.MaterialButton();
-            btnExibirReservas = new ReaLTaiizor.Controls.MaterialButton();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
+            this.mlblNome = new ReaLTaiizor.Controls.MaterialLabel();
+            this.materialLabel1 = new ReaLTaiizor.Controls.MaterialLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnSair = new ReaLTaiizor.Controls.MaterialButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnMeusCarros = new ReaLTaiizor.Controls.MaterialButton();
+            this.btnCadastrarCarro = new ReaLTaiizor.Controls.MaterialButton();
+            this.btnProcurarCarro = new ReaLTaiizor.Controls.MaterialButton();
+            this.btnExibirReservas = new ReaLTaiizor.Controls.MaterialButton();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // mlblNome
             // 
-            mlblNome.AutoSize = true;
-            mlblNome.Depth = 0;
-            mlblNome.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            mlblNome.Location = new Point(115, 74);
-            mlblNome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            mlblNome.Name = "mlblNome";
-            mlblNome.Size = new Size(1, 0);
-            mlblNome.TabIndex = 14;
+            this.mlblNome.AutoSize = true;
+            this.mlblNome.Depth = 0;
+            this.mlblNome.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.mlblNome.Location = new System.Drawing.Point(115, 74);
+            this.mlblNome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.mlblNome.Name = "mlblNome";
+            this.mlblNome.Size = new System.Drawing.Size(1, 0);
+            this.mlblNome.TabIndex = 14;
             // 
             // materialLabel1
             // 
-            materialLabel1.AutoSize = true;
-            materialLabel1.Depth = 0;
-            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel1.Location = new Point(77, 74);
-            materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new Size(32, 19);
-            materialLabel1.TabIndex = 13;
-            materialLabel1.Text = "Olá, ";
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(77, 74);
+            this.materialLabel1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(32, 19);
+            this.materialLabel1.TabIndex = 13;
+            this.materialLabel1.Text = "Olá, ";
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(btnSair);
-            groupBox2.Location = new Point(105, 294);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(288, 83);
-            groupBox2.TabIndex = 12;
-            groupBox2.TabStop = false;
+            this.groupBox2.Controls.Add(this.btnSair);
+            this.groupBox2.Location = new System.Drawing.Point(105, 341);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(288, 83);
+            this.groupBox2.TabIndex = 12;
+            this.groupBox2.TabStop = false;
             // 
             // btnSair
             // 
-            btnSair.AutoSize = false;
-            btnSair.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnSair.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnSair.Depth = 0;
-            btnSair.HighEmphasis = true;
-            btnSair.Icon = null;
-            btnSair.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnSair.Location = new Point(28, 25);
-            btnSair.Margin = new Padding(4, 6, 4, 6);
-            btnSair.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnSair.Name = "btnSair";
-            btnSair.NoAccentTextColor = Color.Empty;
-            btnSair.Size = new Size(239, 36);
-            btnSair.TabIndex = 5;
-            btnSair.Text = "Sair";
-            btnSair.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnSair.UseAccentColor = false;
-            btnSair.UseVisualStyleBackColor = true;
-            btnSair.Click += btnSair_Click;
+            this.btnSair.AutoSize = false;
+            this.btnSair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSair.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnSair.Depth = 0;
+            this.btnSair.HighEmphasis = true;
+            this.btnSair.Icon = null;
+            this.btnSair.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnSair.Location = new System.Drawing.Point(28, 25);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSair.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnSair.Name = "btnSair";
+            this.btnSair.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnSair.Size = new System.Drawing.Size(239, 36);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "Sair";
+            this.btnSair.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnSair.UseAccentColor = false;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(btnCadastrarCarro);
-            groupBox1.Controls.Add(btnProcurarCarro);
-            groupBox1.Controls.Add(btnExibirReservas);
-            groupBox1.Location = new Point(105, 96);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(288, 171);
-            groupBox1.TabIndex = 11;
-            groupBox1.TabStop = false;
+            this.groupBox1.Controls.Add(this.btnMeusCarros);
+            this.groupBox1.Controls.Add(this.btnCadastrarCarro);
+            this.groupBox1.Controls.Add(this.btnProcurarCarro);
+            this.groupBox1.Controls.Add(this.btnExibirReservas);
+            this.groupBox1.Location = new System.Drawing.Point(105, 96);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(288, 227);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            // 
+            // btnMeusCarros
+            // 
+            this.btnMeusCarros.AutoSize = false;
+            this.btnMeusCarros.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMeusCarros.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnMeusCarros.Depth = 0;
+            this.btnMeusCarros.HighEmphasis = true;
+            this.btnMeusCarros.Icon = null;
+            this.btnMeusCarros.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnMeusCarros.Location = new System.Drawing.Point(28, 73);
+            this.btnMeusCarros.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnMeusCarros.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnMeusCarros.Name = "btnMeusCarros";
+            this.btnMeusCarros.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnMeusCarros.Size = new System.Drawing.Size(239, 36);
+            this.btnMeusCarros.TabIndex = 5;
+            this.btnMeusCarros.Text = "Meus carros";
+            this.btnMeusCarros.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnMeusCarros.UseAccentColor = false;
+            this.btnMeusCarros.UseVisualStyleBackColor = true;
+            this.btnMeusCarros.Click += new System.EventHandler(this.btnMeusCarros_Click);
             // 
             // btnCadastrarCarro
             // 
-            btnCadastrarCarro.AutoSize = false;
-            btnCadastrarCarro.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnCadastrarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnCadastrarCarro.Depth = 0;
-            btnCadastrarCarro.HighEmphasis = true;
-            btnCadastrarCarro.Icon = null;
-            btnCadastrarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnCadastrarCarro.Location = new Point(28, 25);
-            btnCadastrarCarro.Margin = new Padding(4, 6, 4, 6);
-            btnCadastrarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnCadastrarCarro.Name = "btnCadastrarCarro";
-            btnCadastrarCarro.NoAccentTextColor = Color.Empty;
-            btnCadastrarCarro.Size = new Size(239, 36);
-            btnCadastrarCarro.TabIndex = 2;
-            btnCadastrarCarro.Text = "Cadastrar carro";
-            btnCadastrarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnCadastrarCarro.UseAccentColor = false;
-            btnCadastrarCarro.UseVisualStyleBackColor = true;
-            btnCadastrarCarro.Click += btnCadastrarCarro_Click;
+            this.btnCadastrarCarro.AutoSize = false;
+            this.btnCadastrarCarro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCadastrarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCadastrarCarro.Depth = 0;
+            this.btnCadastrarCarro.HighEmphasis = true;
+            this.btnCadastrarCarro.Icon = null;
+            this.btnCadastrarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnCadastrarCarro.Location = new System.Drawing.Point(28, 25);
+            this.btnCadastrarCarro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCadastrarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnCadastrarCarro.Name = "btnCadastrarCarro";
+            this.btnCadastrarCarro.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnCadastrarCarro.Size = new System.Drawing.Size(239, 36);
+            this.btnCadastrarCarro.TabIndex = 2;
+            this.btnCadastrarCarro.Text = "Cadastrar carro";
+            this.btnCadastrarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCadastrarCarro.UseAccentColor = false;
+            this.btnCadastrarCarro.UseVisualStyleBackColor = true;
+            this.btnCadastrarCarro.Click += new System.EventHandler(this.btnCadastrarCarro_Click);
             // 
             // btnProcurarCarro
             // 
-            btnProcurarCarro.AutoSize = false;
-            btnProcurarCarro.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnProcurarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnProcurarCarro.Depth = 0;
-            btnProcurarCarro.HighEmphasis = true;
-            btnProcurarCarro.Icon = null;
-            btnProcurarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnProcurarCarro.Location = new Point(28, 73);
-            btnProcurarCarro.Margin = new Padding(4, 6, 4, 6);
-            btnProcurarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnProcurarCarro.Name = "btnProcurarCarro";
-            btnProcurarCarro.NoAccentTextColor = Color.Empty;
-            btnProcurarCarro.Size = new Size(239, 36);
-            btnProcurarCarro.TabIndex = 3;
-            btnProcurarCarro.Text = "Procurar carro";
-            btnProcurarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnProcurarCarro.UseAccentColor = false;
-            btnProcurarCarro.UseVisualStyleBackColor = true;
-            btnProcurarCarro.Click += btnProcurarCarro_Click;
+            this.btnProcurarCarro.AutoSize = false;
+            this.btnProcurarCarro.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnProcurarCarro.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnProcurarCarro.Depth = 0;
+            this.btnProcurarCarro.HighEmphasis = true;
+            this.btnProcurarCarro.Icon = null;
+            this.btnProcurarCarro.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnProcurarCarro.Location = new System.Drawing.Point(28, 121);
+            this.btnProcurarCarro.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnProcurarCarro.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnProcurarCarro.Name = "btnProcurarCarro";
+            this.btnProcurarCarro.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnProcurarCarro.Size = new System.Drawing.Size(239, 36);
+            this.btnProcurarCarro.TabIndex = 3;
+            this.btnProcurarCarro.Text = "Reservar carro";
+            this.btnProcurarCarro.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnProcurarCarro.UseAccentColor = false;
+            this.btnProcurarCarro.UseVisualStyleBackColor = true;
+            this.btnProcurarCarro.Click += new System.EventHandler(this.btnProcurarCarro_Click);
             // 
             // btnExibirReservas
             // 
-            btnExibirReservas.AutoSize = false;
-            btnExibirReservas.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnExibirReservas.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnExibirReservas.Depth = 0;
-            btnExibirReservas.HighEmphasis = true;
-            btnExibirReservas.Icon = null;
-            btnExibirReservas.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnExibirReservas.Location = new Point(28, 121);
-            btnExibirReservas.Margin = new Padding(4, 6, 4, 6);
-            btnExibirReservas.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
-            btnExibirReservas.Name = "btnExibirReservas";
-            btnExibirReservas.NoAccentTextColor = Color.Empty;
-            btnExibirReservas.Size = new Size(239, 36);
-            btnExibirReservas.TabIndex = 4;
-            btnExibirReservas.Text = "Exibir Reservas";
-            btnExibirReservas.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnExibirReservas.UseAccentColor = false;
-            btnExibirReservas.UseVisualStyleBackColor = true;
+            this.btnExibirReservas.AutoSize = false;
+            this.btnExibirReservas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnExibirReservas.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnExibirReservas.Depth = 0;
+            this.btnExibirReservas.HighEmphasis = true;
+            this.btnExibirReservas.Icon = null;
+            this.btnExibirReservas.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            this.btnExibirReservas.Location = new System.Drawing.Point(28, 169);
+            this.btnExibirReservas.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnExibirReservas.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            this.btnExibirReservas.Name = "btnExibirReservas";
+            this.btnExibirReservas.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnExibirReservas.Size = new System.Drawing.Size(239, 36);
+            this.btnExibirReservas.TabIndex = 4;
+            this.btnExibirReservas.Text = "Minhas Reservas";
+            this.btnExibirReservas.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnExibirReservas.UseAccentColor = false;
+            this.btnExibirReservas.UseVisualStyleBackColor = true;
+            this.btnExibirReservas.Click += new System.EventHandler(this.btnExibirReservas_Click);
             // 
             // FormPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.locatora;
-            BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(471, 450);
-            Controls.Add(mlblNome);
-            Controls.Add(materialLabel1);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            IsMdiContainer = true;
-            Name = "FormPrincipal";
-            Text = "Locatora - Tela Inicial";
-            WindowState = FormWindowState.Maximized;
-            FormClosing += FormPrincipal_FormClosing;
-            groupBox2.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Locatora.App.Properties.Resources.locatora;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(471, 450);
+            this.Controls.Add(this.mlblNome);
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.IsMdiContainer = true;
+            this.Name = "FormPrincipal";
+            this.Text = "Locatora - Tela Inicial";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -202,5 +227,6 @@
         private ReaLTaiizor.Controls.MaterialButton btnCadastrarCarro;
         private ReaLTaiizor.Controls.MaterialButton btnProcurarCarro;
         private ReaLTaiizor.Controls.MaterialButton btnExibirReservas;
+        private ReaLTaiizor.Controls.MaterialButton btnMeusCarros;
     }
 }

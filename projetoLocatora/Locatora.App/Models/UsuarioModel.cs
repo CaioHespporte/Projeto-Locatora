@@ -1,4 +1,6 @@
-﻿namespace Locatora.App.Models
+﻿using Locatora.Domain.Entities;
+
+namespace Locatora.App.Models
 {
     public class UsuarioModel
     {
@@ -13,5 +15,6 @@
 
         public DateTime DataNascimento { get; set; }
         public DateTime DataCadastro { get; set; }
+
     }
 }

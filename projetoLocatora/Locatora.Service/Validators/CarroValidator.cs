@@ -4,9 +4,9 @@ using Locatora.Domain.Entities;
 
 namespace Locatora.Service.Validators
 {
-    public class Cadastrar_carroValidator : AbstractValidator<Cadastrar_carro>
+    public class CarroValidator : AbstractValidator<Carro>
     {
-        public Cadastrar_carroValidator()
+        public CarroValidator()
         {
             RuleFor(c => c.Modelo)
                 .NotEmpty().WithMessage("Por favor informe o modelo.")

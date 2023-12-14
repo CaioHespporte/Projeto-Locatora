@@ -10,7 +10,9 @@
 
         public int IdUsuario { get; set; }
         public required string Usuario { get; set; }
-        public int IdCadastrar_Carro { get; set; }
-        public required string Cadastrar_carro { get; set; }
+        public int IdCarro { get; set; }
+        public required string Carro{ get; set; }
+
+        public string? Proprietario { get; set; }
     }
 }

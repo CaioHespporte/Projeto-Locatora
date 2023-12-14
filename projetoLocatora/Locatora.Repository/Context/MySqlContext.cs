@@ -14,20 +14,19 @@ namespace Locatora.Repository.Context
         }
 
         public DbSet<Usuario>? Usuario { get; set; }
-        public DbSet<Oferta>? Oferta { get; set; }
-        public DbSet<Ofertas_reserva>? Ofertas_reserva { get; set; }
-        public DbSet<Cadastrar_carro>? Cadastrar_carro { get; set; }
+        public DbSet<Carro>? Carro { get; set; }
         public DbSet<Reserva>? Reserva { get; set; }
-
+        public DbSet<Cidade>? Cidade { get; set; }
+        public DbSet<Estado>? Estado { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Usuario>(new UsuarioMap().Configure);
-            modelBuilder.Entity<Oferta>(new OfertaMap().Configure);
-            modelBuilder.Entity<Ofertas_reserva>(new Ofertas_reservaMap().Configure);
-            modelBuilder.Entity<Cadastrar_carro>(new Cadastrar_carroMap().Configure);
+            modelBuilder.Entity<Carro>(new CarroMap().Configure);
             modelBuilder.Entity<Reserva>(new ReservaMap().Configure);
+            modelBuilder.Entity<Cidade>(new CidadeMap().Configure);
+            modelBuilder.Entity<Estado>(new EstadoMap().Configure);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Locatora.Repository.Mapping
                 .IsRequired();
 
             builder.HasOne(prop => prop.Usuario);
-            builder.HasOne(prop => prop.Cadastrar_carro);
+            builder.HasOne(prop => prop.Carro);
         }
     }
 }

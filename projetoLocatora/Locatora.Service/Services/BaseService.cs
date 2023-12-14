@@ -71,7 +71,7 @@ namespace Locatora.Service.Services
 
             Validate(entity, Activator.CreateInstance<TValidator>());
 
-            //_baseRepository.ClearChangeTracker();
+            _baseRepository.ClearChangeTracker(); //bug murilo
             _baseRepository.Update(entity);
 
             var outputModel = _mapper.Map<TOutputModel>(entity);
@@ -86,14 +86,6 @@ namespace Locatora.Service.Services
 
             validator.ValidateAndThrow(obj);
         }
-
-
-        /*public IEnumerable<TOutputModel> GetAll<TOutputModel>() where TOutputModel : class
-        {
-            var entities = _baseRepository.Select();
-            var outputModels = entities.Select(s => _mapper.Map<TOutputModel>(s));
-            return outputModels;
-        } // método pra selecionar tudo no banco*/
 
     }
 }

@@ -17,46 +17,73 @@ namespace Locatora.App.Cadastros
     public partial class CadastroCarro : CadastroBase
     {
 
-        public static Usuario Usuario { get; set; }
+        public static Usuario usuario { get; set; }
 
 
-        private readonly IBaseService<Cadastrar_carro> _cadastrar_carroService;
+        private readonly IBaseService<Carro> _carroService;
         private readonly IBaseService<Usuario> _usuarioService;
+        private readonly IBaseService<Estado> _estadoService;
+        private readonly IBaseService<Cidade> _cidadeService;
 
 
         //private List<Cadastrar_carro>? Cadastrar_carros;
 
-        public CadastroCarro(IBaseService<Cadastrar_carro> cadastrar_carroService,
-                             IBaseService<Usuario> usuarioService)
+        public CadastroCarro(IBaseService<Carro> cadastrar_carroService,
+                             IBaseService<Usuario> usuarioService,
+                             IBaseService<Estado> estadoService,
+                             IBaseService<Cidade> cidadeService)
         {
             _usuarioService = usuarioService;
-            _cadastrar_carroService = cadastrar_carroService;
+            _carroService = cadastrar_carroService;
+            _estadoService = estadoService;
+            _cidadeService = cidadeService;
             InitializeComponent();
+            CarregarCombo();
         }
 
-
-        private void PreencheObjeto(Cadastrar_carro cadastrar_carro)
+        private void CarregarCombo()
         {
-            cadastrar_carro.Modelo = txtModelo.Text;
-            cadastrar_carro.Placa = txtPlaca.Text;
-            cadastrar_carro.Ano = int.Parse(txtAno.Text);
-            cadastrar_carro.Cidade = txtCidade.Text;
-            cadastrar_carro.Estado = cboEstado.Text;
-            cadastrar_carro.UsuarioId = Usuario.Id;
+            cboEstado.ValueMember = "Id";
+            cboEstado.DisplayMember = "Nome";
+            cboEstado.DataSource = _estadoService.Get<Estado>().ToList();
+            cboEstado.SelectedIndex = 1;
+            cboEstado.SelectedIndex = 0;
+        }
+
+        private void PreencheObjeto(Carro carro)
+        {
+            carro.Modelo = txtModelo.Text;
+            carro.Placa = txtPlaca.Text;
+            carro.Ano = int.Parse(txtAno.Text);
+
             string valorDiaSemMascara = new string(mmtbValor_dia.Text.Where(char.IsDigit).ToArray());
             if (int.TryParse(valorDiaSemMascara, out var valorDia))
             {
-                cadastrar_carro.Valor_dia = (float)valorDia/100.0f;
+                carro.Valor_dia = (float)valorDia / 100.0f;
             }
             else
             {
-                // Tratar o caso em que a conversão falha
-                Console.WriteLine("Não foi possível converter o valor diário para um número inteiro.");
+                MessageBox.Show("Não foi possível converter o valor diário para um número!");
             }
 
-            //cadastrar_carro.Seguro = cbSeguro.Checked;
-            cadastrar_carro.Seguro = cbSeguro.Checked;
+            if (int.TryParse(cboEstado.SelectedValue.ToString(), out var idEstado))
+            {
+                var estado = _estadoService.GetById<Estado>(idEstado);                
+                carro.Estado = estado;
+            }
 
+            if(cboCidade.SelectedValue != null)
+            {
+                if (int.TryParse(cboCidade.SelectedValue.ToString(), out var idCidade))
+                {
+                    var cidade = _cidadeService.GetById<Cidade>(idCidade);
+                    carro.Cidade = cidade;
+                }
+            }
+
+            carro.Alugado = false;
+            carro.Seguro = cbSeguro.Checked;
+            carro.Usuario = usuario;
 
         }
 
@@ -68,17 +95,16 @@ namespace Locatora.App.Cadastros
                 {
                     if (int.TryParse(txtId.Text, out var id))
                     {
-                        var cadastrar_carro = _cadastrar_carroService.GetById<Cadastrar_carro>(id);
-                        PreencheObjeto(cadastrar_carro);
-                        cadastrar_carro = _cadastrar_carroService.Update<Cadastrar_carro, Cadastrar_carro, Cadastrar_carroValidator>(cadastrar_carro);
+                        var carro = _carroService.GetById<Carro>(id);
+                        PreencheObjeto(carro);
+                        carro = _carroService.Update<Carro, Carro, CarroValidator>(carro);
                     }
                 }
                 else
                 {
-
-                    var cadastrar_carro = new Cadastrar_carro();
-                    PreencheObjeto(cadastrar_carro);
-                    _cadastrar_carroService.Add<Cadastrar_carro, Cadastrar_carro, Cadastrar_carroValidator>(cadastrar_carro);
+                    var carro = new Carro();
+                    PreencheObjeto(carro);
+                    _carroService.Add<Carro, Carro, CarroValidator>((Carro)carro);
                 }
 
             }
@@ -88,5 +114,14 @@ namespace Locatora.App.Cadastros
             }
         }
 
+        private void cboEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idEstado = int.Parse(cboEstado.SelectedValue.ToString());
+            var estado = _estadoService.GetById<Estado>(idEstado, new[] {"Cidades"});
+            
+            cboCidade.ValueMember = "Id";
+            cboCidade.DisplayMember = "Nome";
+            cboCidade.DataSource = estado.Cidades.ToList();
+        }
     }
 }
